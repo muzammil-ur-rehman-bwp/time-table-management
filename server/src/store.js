@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { DATA_FILE } from './config.js';
-import { recomputeAll } from './recompute.js';
+import { recomputeAll, ensureDefaults } from './recompute.js';
 
 // The source file is CRLF-terminated with 1-space indent. We preserve that
 // formatting on every write so that `git diff` after this app edits the file
@@ -12,7 +12,12 @@ function serialize(data) {
 
 async function readFromDisk() {
   const raw = await fs.readFile(DATA_FILE, 'utf8');
-  return JSON.parse(raw);
+  const data = JSON.parse(raw);
+  // So a plain GET on a freshly-pulled file (never written by this app yet)
+  // doesn't crash on a collection, like data.allocations, that this app adds
+  // to the schema but that a write hasn't materialized on disk yet.
+  ensureDefaults(data);
+  return data;
 }
 
 async function writeToDisk(data) {

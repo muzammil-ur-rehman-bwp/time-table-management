@@ -160,8 +160,16 @@ function recomputeCounts(data) {
   };
 }
 
-export function recomputeAll(data) {
+// Fills in collections this app adds to the schema (currently just
+// data.allocations) when they're missing - e.g. on a freshly-pulled file
+// that has never been through a write from this app yet. Safe to call on
+// every read, not just on write.
+export function ensureDefaults(data) {
   data.data.allocations = data.data.allocations ?? [];
+}
+
+export function recomputeAll(data) {
+  ensureDefaults(data);
   recomputeTeachers(data);
   recomputeRooms(data);
   recomputeIndex(data);

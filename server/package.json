@@ -1,0 +1,16 @@
+{
+  "name": "timetable-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Express API that reads/writes time-table-fall-2026.json as the single source of truth.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "dev": "node --env-file-if-exists=.env --watch src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

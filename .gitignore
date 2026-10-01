@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Env files (copy from .env.example)
+.env
+.env.local
+*.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor/OS
+.DS_Store
+.vscode/
+.idea/
+
+# Temp files written by the server's atomic save (should never survive a crash, but just in case)
+server/**/.*.tmp-*

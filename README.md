@@ -39,9 +39,28 @@ The source file only recorded the *result* of scheduling (placements) plus a der
 section Z" record independent of a scheduled day/room/time - which is what the task asks for
 as a distinct, manageable concept ("course-teacher assignment (allocation)", separate from
 "timetable entries"). `data.allocations[]` fills that gap: it's the workload assignment made
-*before* a class is placed on the grid. A placement can optionally reference an
-`allocation_id`; the Allocations screen shows a computed (not persisted) `scheduled: true/false`
-flag for whether a matching placement already exists.
+*before* a class is placed on the grid.
+
+**One-time migration.** Since `data.allocations` doesn't exist in the source file, the server
+derives it automatically, once, the first time it starts against a given data file: it groups
+`data.placements` by `(teacher, course)`, creates one allocation per group covering every
+section that pair teaches, and stamps each contributing placement with the new allocation's id
+(`placement.allocation_id`). This is a real write to `time-table-fall-2026.json` - you'll see
+`data.allocations` (~115 entries from the Fall 2026 data) and `allocation_id` on every placement
+appear in `git diff` the first time you run `npm start` after pulling this. It's guarded by
+`meta.app.allocations_bootstrapped` so it never runs twice and never overwrites allocations
+you've since created, edited or deleted by hand.
+
+**Editing a teacher cascades to the timetable.** Because every allocation knows which
+placements it produced, changing an allocation's `teacher` (via the UI or `PUT
+/api/allocations/:id`) updates `teacher` on all of them in the same write - you don't edit the
+timetable entries separately. Before applying the change, the server checks whether the new
+teacher is already booked elsewhere at each of those entries' day/slots (the same double-booking
+check placements use) and returns `409` with the clashing placement ids if so; pass
+`"force": true` to reassign anyway. `POST /api/allocations/:id/check-teacher-change` runs the
+same check without saving, for a dry-run preview (the Allocations UI uses this before offering
+to save). Editing other allocation fields (sections, delivery, notes, ...) just updates the
+allocation record and does not touch the linked placements.
 
 ## What the server recomputes on every write (and what it deliberately leaves alone)
 
@@ -93,6 +112,8 @@ All endpoints are under `/api`. Standard REST per resource (`GET /`, `GET /:id`,
 - `GET/POST/PUT/DELETE /api/grid` - slots live at `/api/grid/slots[/:index]`, days at
   `/api/grid/days[/:code]`.
 - `POST /api/placements/check-conflicts` - dry-run conflict check used by the UI before saving.
+- `POST /api/allocations/:id/check-teacher-change` - dry-run conflict check for reassigning an
+  allocation's teacher, before it cascades to the linked timetable entries.
 - `GET /api/conflicts` - live double-booking scan across the whole schedule.
 - `GET /api/meta`, `/api/meta/index`, `/api/meta/common-courses`, `/api/meta/final-year-projects`,
   `/api/meta/removed-offerings`, `/api/meta/unstaffed` - read-only.

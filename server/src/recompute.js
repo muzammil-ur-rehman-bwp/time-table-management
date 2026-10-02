@@ -175,6 +175,7 @@ export function recomputeAll(data) {
   recomputeIndex(data);
   recomputeCounts(data);
   data.meta.app = {
+    ...data.meta.app,
     managed_by: 'timetable-admin app (server + client in this repo)',
     last_modified: new Date().toISOString(),
     note: 'This block and data.allocations were introduced by the admin app. meta.verification/meta.rules above are a frozen historical snapshot from the original generation pipeline and are not re-validated live - see README.md.',

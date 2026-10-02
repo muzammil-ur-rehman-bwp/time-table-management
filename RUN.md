@@ -29,6 +29,12 @@ Check it's alive:
 curl http://localhost:4000/api/health
 ```
 
+**First run only**: the server derives `data.allocations` from your existing timetable
+entries and writes it back to `time-table-fall-2026.json` (you'll see a
+"One-time migration: derived N allocation(s)..." log line, and `git status` will show the file
+changed). This happens once per data file - see README.md for exactly what it does. Review the
+diff and commit it like any other change.
+
 ## 2. Frontend (React / Vite)
 
 In a second terminal:
@@ -67,7 +73,9 @@ The server has no build step; `npm start` runs it directly.
 
 - **Client shows "API error: Failed to fetch"**: the server isn't running, or `VITE_API_URL`
   in `client/.env` doesn't match where it's listening.
-- **409 on save**: either a scheduling conflict (teacher/room/section double-booked - the UI
-  shows which placement it clashes with and offers a "Save anyway" override) or you're trying
-  to delete something still referenced elsewhere (e.g. a teacher with existing placements).
+- **409 on save**: either a scheduling conflict (teacher/room/section double-booked, or - when
+  reassigning an allocation's teacher - the new teacher already booked at one of its linked
+  timetable entries; either way the UI shows which entry it clashes with and offers a "Save
+  anyway" override) or you're trying to delete something still referenced elsewhere (e.g. a
+  teacher with existing placements, or an allocation with linked timetable entries).
 - **Port already in use**: set `PORT` (server) or pass `--port` to `vite` (client).

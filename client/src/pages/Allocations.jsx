@@ -1,12 +1,20 @@
+import { useState } from 'react';
 import { useData } from '../DataContext';
-import { CrudPage } from '../components/CrudPage';
+import { DataTable } from '../components/DataTable';
+import { Modal } from '../components/Modal';
+import { EntityForm } from '../components/EntityForm';
+import { AllocationForm } from '../components/AllocationForm';
+import { api } from '../api';
 
 const DELIVERIES = ['in-room', 'online'];
 
 export default function Allocations() {
-  const { allocations, courses, teachers, sections } = useData();
+  const { allocations, courses, teachers, sections, reloadAll } = useData();
+  const [adding, setAdding] = useState(false);
+  const [editing, setEditing] = useState(null);
+  const [error, setError] = useState(null);
 
-  const fields = () => [
+  const addFields = [
     {
       name: 'course_id',
       label: 'Course',
@@ -32,22 +40,86 @@ export default function Allocations() {
     { name: 'notes', label: 'Notes', type: 'textarea' },
   ];
 
+  async function handleAdd(values) {
+    await api.post('/allocations', values);
+    setAdding(false);
+    await reloadAll();
+  }
+
+  async function handleDelete(row) {
+    const linked = row.linked_placement_ids?.length || 0;
+    if (linked > 0) {
+      window.alert(
+        `"${row.id}" is still linked to ${linked} timetable ${linked === 1 ? 'entry' : 'entries'}. Delete or reassign those first.`
+      );
+      return;
+    }
+    if (!window.confirm(`Delete allocation "${row.id}"?`)) return;
+    setError(null);
+    try {
+      await api.del(`/allocations/${row.id}`);
+      await reloadAll();
+    } catch (err) {
+      setError(err.message);
+    }
+  }
+
+  async function handleAllocationSaved() {
+    setEditing(null);
+    await reloadAll();
+  }
+
   return (
-    <CrudPage
-      title="Allocations"
-      resource="allocations"
-      rows={allocations}
-      idOf={(a) => a.id}
-      description="Allocation = which teacher is assigned to teach a course for which sections, before it is scheduled into a room/day/time. Create the Timetable entry afterwards to put it on the schedule."
-      columns={[
-        { key: 'id', label: 'Id' },
-        { key: 'course_code', label: 'Course' },
-        { key: 'teacher', label: 'Teacher' },
-        { key: 'sections', label: 'Sections', render: (a) => (a.sections || []).join(', ') },
-        { key: 'delivery', label: 'Delivery' },
-        { key: 'scheduled', label: 'Scheduled?', render: (a) => (a.scheduled ? 'Yes' : 'No') },
-      ]}
-      fields={fields}
-    />
+    <section>
+      <div className="page-header">
+        <div>
+          <h2>Allocations</h2>
+          <p className="muted">
+            Who teaches what, for which sections - the workload assignment behind the timetable. Every
+            allocation here was either derived once from the existing timetable entries (see notes) or
+            created by hand. Changing an allocation's teacher updates every timetable entry it produced,
+            after checking the new teacher isn't already busy at those times.
+          </p>
+        </div>
+        <button className="btn-primary" onClick={() => setAdding(true)}>
+          + Add allocation
+        </button>
+      </div>
+
+      {error && <p className="form-error">{error}</p>}
+
+      <DataTable
+        columns={[
+          { key: 'id', label: 'Id' },
+          { key: 'course_code', label: 'Course' },
+          { key: 'teacher', label: 'Teacher' },
+          { key: 'sections', label: 'Sections', render: (a) => (a.sections || []).join(', ') },
+          { key: 'delivery', label: 'Delivery' },
+          { key: 'linked', label: 'Timetable entries', render: (a) => a.linked_placement_ids?.length || 0 },
+        ]}
+        rows={allocations}
+        rowKey={(a) => a.id}
+        onEdit={(row) => setEditing(row)}
+        onDelete={handleDelete}
+      />
+
+      {adding && (
+        <Modal title="New allocation" onClose={() => setAdding(false)}>
+          <EntityForm
+            fields={addFields}
+            initial={{}}
+            onSubmit={handleAdd}
+            onCancel={() => setAdding(false)}
+            submitLabel="Create"
+          />
+        </Modal>
+      )}
+
+      {editing && (
+        <Modal title={`Edit ${editing.id}`} onClose={() => setEditing(null)} wide>
+          <AllocationForm allocation={editing} onSaved={handleAllocationSaved} onCancel={() => setEditing(null)} />
+        </Modal>
+      )}
+    </section>
   );
 }

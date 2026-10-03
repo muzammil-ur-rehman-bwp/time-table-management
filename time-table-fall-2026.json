@@ -278,6 +278,7 @@
    "teachers": 109,
    "rooms": 19,
    "placements": 294,
+   "allocations": 115,
    "common_course_blocks": 28,
    "final_year_projects": 12,
    "online_no_slot": 0,
@@ -331,6 +332,12 @@
    },
    "ta_notes": "A Teaching Assistant also carries ta_degree (the degree read for), ta_association (the faculty member assisted, expanded to the full name where the roster holds exactly one match) and ta_association_as_given (the department's own shorthand). Nobody else carries these fields.",
    "ta_counted": 9
+  },
+  "app": {
+   "allocations_bootstrapped": true,
+   "managed_by": "timetable-admin app (server + client in this repo)",
+   "last_modified": "2026-10-03T00:37:16.735Z",
+   "note": "This block and data.allocations were introduced by the admin app. meta.verification/meta.rules above are a frozen historical snapshot from the original generation pipeline and are not re-validated live - see README.md."
   }
  },
  "data": {
@@ -2823,9 +2830,9 @@
       "course_title": "Programming Fundamentals",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-1ST-1E",
        "BSARIN-1ST-8M",
-       "BSARIN-1ST-9M",
-       "BSARIN-1ST-1E"
+       "BSARIN-1ST-9M"
       ],
       "meetings": 3
      },
@@ -2866,10 +2873,10 @@
       "course_title": "Linear Algebra",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-3RD-7M",
-       "BSARIN-3RD-8M",
        "BSARIN-3RD-1E",
-       "BSARIN-3RD-2E"
+       "BSARIN-3RD-2E",
+       "BSARIN-3RD-7M",
+       "BSARIN-3RD-8M"
       ],
       "meetings": 4
      }
@@ -2901,11 +2908,11 @@
       "course_title": "Probability & Statistics",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-4TH-1E",
        "BSARIN-4TH-1M",
        "BSARIN-4TH-2M",
        "BSARIN-4TH-3M",
-       "BSARIN-4TH-4M",
-       "BSARIN-4TH-1E"
+       "BSARIN-4TH-4M"
       ],
       "meetings": 5
      }
@@ -3002,9 +3009,9 @@
       "course_title": "Domain Elective 6 (Robotics)",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-7TH-1E",
        "BSARIN-7TH-3M",
-       "BSARIN-7TH-4M",
-       "BSARIN-7TH-1E"
+       "BSARIN-7TH-4M"
       ],
       "meetings": 3
      },
@@ -3137,8 +3144,8 @@
       "course_title": "Pakistan Studies",
       "delivery": "online",
       "sections": [
-       "BSARIN-3RD-7M",
        "BSARIN-3RD-2E",
+       "BSARIN-3RD-7M",
        "BSARIN-6TH-3M",
        "BSARIN-6TH-4M"
       ],
@@ -3345,10 +3352,10 @@
       "course_title": "Domain Core 1 (Programming for AI)",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-3RD-1E",
        "BSARIN-3RD-3M",
        "BSARIN-3RD-4M",
-       "BSARIN-3RD-7M",
-       "BSARIN-3RD-1E"
+       "BSARIN-3RD-7M"
       ],
       "meetings": 4
      }
@@ -3491,10 +3498,10 @@
       "course_title": "Pakistan Studies",
       "delivery": "online",
       "sections": [
+       "BSARIN-3RD-1E",
        "BSARIN-3RD-5M",
        "BSARIN-3RD-6M",
-       "BSARIN-3RD-8M",
-       "BSARIN-3RD-1E"
+       "BSARIN-3RD-8M"
       ],
       "meetings": 2
      }
@@ -3526,10 +3533,10 @@
       "course_title": "Domain Core 3 (Artificial Neural Networks & Deep Learning)",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-5TH-7M",
-       "BSARIN-5TH-8M",
+       "BSADARIN-5TH-1M",
        "BSARIN-5TH-3E",
-       "BSADARIN-5TH-1M"
+       "BSARIN-5TH-7M",
+       "BSARIN-5TH-8M"
       ],
       "meetings": 4
      }
@@ -3561,9 +3568,9 @@
       "course_title": "Calculus & Analytical Geometry – IDS I",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-1ST-11M",
        "BSARIN-1ST-7M",
-       "BSARIN-1ST-8M",
-       "BSARIN-1ST-11M"
+       "BSARIN-1ST-8M"
       ],
       "meetings": 3
      },
@@ -3842,11 +3849,11 @@
       "course_title": "Calculus & Analytical Geometry – IDS I",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-1ST-1E",
        "BSARIN-1ST-1M",
        "BSARIN-1ST-2M",
        "BSARIN-1ST-3M",
-       "BSARIN-1ST-4M",
-       "BSARIN-1ST-1E"
+       "BSARIN-1ST-4M"
       ],
       "meetings": 5
      },
@@ -4144,9 +4151,9 @@
       "course_title": "Domain Elective 4 (Natural Language Processing)",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-5TH-2E",
        "BSARIN-5TH-6M",
        "BSARIN-5TH-7M",
-       "BSARIN-5TH-2E",
        "BSARIN-6TH-4M"
       ],
       "meetings": 4
@@ -4261,8 +4268,8 @@
       "course_title": "Domain Elective 6 (Robotics)",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-7TH-4E",
-       "BSADARIN-7TH-1M"
+       "BSADARIN-7TH-1M",
+       "BSARIN-7TH-4E"
       ],
       "meetings": 1
      }
@@ -4319,10 +4326,10 @@
       "course_title": "Social Sciences (Organizational Behavior)",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-5TH-8M",
        "BSARIN-5TH-1E",
        "BSARIN-5TH-2E",
-       "BSARIN-5TH-3E"
+       "BSARIN-5TH-3E",
+       "BSARIN-5TH-8M"
       ],
       "meetings": 4
      }
@@ -4349,10 +4356,10 @@
       "course_title": "Applications of Information and Communication Technologies",
       "delivery": "online",
       "sections": [
-       "BSARIN-1ST-9M",
        "BSARIN-1ST-10M",
        "BSARIN-1ST-11M",
-       "BSARIN-1ST-1E"
+       "BSARIN-1ST-1E",
+       "BSARIN-1ST-9M"
       ],
       "meetings": 2
      }
@@ -4415,12 +4422,12 @@
       "course_title": "Domain Core 3 (Artificial Neural Networks & Deep Learning)",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-5TH-1E",
+       "BSARIN-5TH-2E",
        "BSARIN-5TH-2M",
        "BSARIN-5TH-3M",
        "BSARIN-5TH-4M",
-       "BSARIN-5TH-5M",
-       "BSARIN-5TH-1E",
-       "BSARIN-5TH-2E"
+       "BSARIN-5TH-5M"
       ],
       "meetings": 6
      }
@@ -4474,8 +4481,8 @@
       "course_title": "Functional English",
       "delivery": "online",
       "sections": [
-       "BSARIN-1ST-9M",
-       "BSARIN-1ST-10M"
+       "BSARIN-1ST-10M",
+       "BSARIN-1ST-9M"
       ],
       "meetings": 1
      }
@@ -4506,10 +4513,10 @@
       "course_title": "Operating Systems",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-5TH-7M",
-       "BSARIN-5TH-8M",
        "BSARIN-5TH-1E",
-       "BSARIN-5TH-2E"
+       "BSARIN-5TH-2E",
+       "BSARIN-5TH-7M",
+       "BSARIN-5TH-8M"
       ],
       "meetings": 4
      }
@@ -4537,8 +4544,8 @@
       "course_title": "Computer Organization & Assembly Language",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-4TH-1M",
-       "BSARIN-4TH-1E"
+       "BSARIN-4TH-1E",
+       "BSARIN-4TH-1M"
       ],
       "meetings": 2
      }
@@ -4566,8 +4573,8 @@
       "course_title": "Digital Logic Design",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-3RD-8M",
-       "BSARIN-3RD-3E"
+       "BSARIN-3RD-3E",
+       "BSARIN-3RD-8M"
       ],
       "meetings": 2
      }
@@ -4599,8 +4606,8 @@
       "course_title": "Domain Core 1 (Programming for AI)",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-3RD-8M",
-       "BSARIN-3RD-2E"
+       "BSARIN-3RD-2E",
+       "BSARIN-3RD-8M"
       ],
       "meetings": 2
      },
@@ -4672,9 +4679,9 @@
       "delivery": "in-room",
       "sections": [
        "BSARIN-3RD-5M",
-       "BSARIN-7TH-3M",
        "BSARIN-7TH-2E",
-       "BSARIN-7TH-3E"
+       "BSARIN-7TH-3E",
+       "BSARIN-7TH-3M"
       ],
       "meetings": 4
      }
@@ -4740,10 +4747,10 @@
       "course_title": "Software Engineering",
       "delivery": "in-room",
       "sections": [
+       "BSADARIN-7TH-1M",
        "BSARIN-7TH-1M",
        "BSARIN-7TH-2M",
-       "BSARIN-7TH-4E",
-       "BSADARIN-7TH-1M"
+       "BSARIN-7TH-4E"
       ],
       "meetings": 3
      }
@@ -4772,9 +4779,9 @@
       "course_title": "Social Science (Introduction to Digital Media)",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-1ST-10M",
        "BSARIN-1ST-8M",
-       "BSARIN-1ST-9M",
-       "BSARIN-1ST-10M"
+       "BSARIN-1ST-9M"
       ],
       "meetings": 3
      }
@@ -4808,8 +4815,8 @@
       "sections": [
        "BSARIN-5TH-1M",
        "BSARIN-5TH-2M",
-       "BSARIN-5TH-3M",
-       "BSARIN-5TH-3E"
+       "BSARIN-5TH-3E",
+       "BSARIN-5TH-3M"
       ],
       "meetings": 4
      }
@@ -4872,10 +4879,10 @@
       "course_title": "Programming Fundamentals",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-1ST-10M",
        "BSARIN-1ST-3M",
        "BSARIN-1ST-4M",
-       "BSARIN-1ST-7M",
-       "BSARIN-1ST-10M"
+       "BSARIN-1ST-7M"
       ],
       "meetings": 4
      }
@@ -4934,8 +4941,8 @@
       "delivery": "in-room",
       "sections": [
        "BSARIN-7TH-1M",
-       "BSARIN-7TH-2M",
        "BSARIN-7TH-2E",
+       "BSARIN-7TH-2M",
        "BSARIN-7TH-3E"
       ],
       "meetings": 4
@@ -4968,10 +4975,10 @@
       "course_title": "Domain Elective 2 (Web Programming)",
       "delivery": "in-room",
       "sections": [
+       "BSADARIN-5TH-1M",
        "BSARIN-5TH-6M",
        "BSARIN-5TH-7M",
-       "BSARIN-5TH-8M",
-       "BSADARIN-5TH-1M"
+       "BSARIN-5TH-8M"
       ],
       "meetings": 4
      }
@@ -5003,10 +5010,10 @@
       "course_title": "Data Structures",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-3RD-3M",
-       "BSARIN-3RD-4M",
        "BSARIN-3RD-1E",
-       "BSARIN-3RD-3E"
+       "BSARIN-3RD-3E",
+       "BSARIN-3RD-3M",
+       "BSARIN-3RD-4M"
       ],
       "meetings": 4
      }
@@ -5034,8 +5041,8 @@
       "course_title": "Software Engineering",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-7TH-4M",
-       "BSARIN-7TH-1E"
+       "BSARIN-7TH-1E",
+       "BSARIN-7TH-4M"
       ],
       "meetings": 2
      }
@@ -5106,8 +5113,8 @@
       "course_title": "Domain Elective 4 (Natural Language Processing)",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-5TH-3E",
-       "BSADARIN-5TH-1M"
+       "BSADARIN-5TH-1M",
+       "BSARIN-5TH-3E"
       ],
       "meetings": 2
      }
@@ -5139,10 +5146,10 @@
       "course_title": "Domain Elective 2 (Web Programming)",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-5TH-4M",
-       "BSARIN-5TH-5M",
        "BSARIN-5TH-1E",
-       "BSARIN-5TH-2E"
+       "BSARIN-5TH-2E",
+       "BSARIN-5TH-4M",
+       "BSARIN-5TH-5M"
       ],
       "meetings": 4
      }
@@ -5174,11 +5181,11 @@
       "course_title": "Domain Elective 1 (Mobile Application Development)",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-4TH-1E",
        "BSARIN-4TH-1M",
        "BSARIN-4TH-2M",
        "BSARIN-4TH-3M",
-       "BSARIN-4TH-4M",
-       "BSARIN-4TH-1E"
+       "BSARIN-4TH-4M"
       ],
       "meetings": 3
      }
@@ -5244,10 +5251,10 @@
       "course_title": "Computer Networks",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-4TH-1E",
        "BSARIN-4TH-1M",
        "BSARIN-4TH-2M",
-       "BSARIN-4TH-3M",
-       "BSARIN-4TH-1E"
+       "BSARIN-4TH-3M"
       ],
       "meetings": 4
      }
@@ -5320,11 +5327,11 @@
       "course_title": "Machine Learning",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-4TH-1E",
        "BSARIN-4TH-1M",
        "BSARIN-4TH-2M",
        "BSARIN-4TH-3M",
-       "BSARIN-4TH-4M",
-       "BSARIN-4TH-1E"
+       "BSARIN-4TH-4M"
       ],
       "meetings": 5
      }
@@ -5427,10 +5434,10 @@
       "course_title": "Operating Systems",
       "delivery": "in-room",
       "sections": [
+       "BSADARIN-5TH-1M",
        "BSARIN-5TH-1M",
        "BSARIN-5TH-2M",
-       "BSARIN-5TH-3E",
-       "BSADARIN-5TH-1M"
+       "BSARIN-5TH-3E"
       ],
       "meetings": 4
      }
@@ -5461,10 +5468,10 @@
       "course_title": "Calculus & Analytical Geometry – IDS I",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-1ST-10M",
        "BSARIN-1ST-5M",
        "BSARIN-1ST-6M",
-       "BSARIN-1ST-9M",
-       "BSARIN-1ST-10M"
+       "BSARIN-1ST-9M"
       ],
       "meetings": 4
      }
@@ -5494,9 +5501,9 @@
       "course_title": "Information Security",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-7TH-1E",
        "BSARIN-7TH-3M",
-       "BSARIN-7TH-4M",
-       "BSARIN-7TH-1E"
+       "BSARIN-7TH-4M"
       ],
       "meetings": 3
      }
@@ -5626,10 +5633,10 @@
       "course_title": "Domain Core 4 (Knowledge Representation & Reasoning)",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-5TH-3M",
-       "BSARIN-5TH-4M",
        "BSARIN-5TH-1E",
-       "BSARIN-5TH-2E"
+       "BSARIN-5TH-2E",
+       "BSARIN-5TH-3M",
+       "BSARIN-5TH-4M"
       ],
       "meetings": 4
      }
@@ -5820,10 +5827,10 @@
       "course_title": "Domain Core 4 (Knowledge Representation & Reasoning)",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-5TH-7M",
-       "BSARIN-5TH-8M",
+       "BSADARIN-5TH-1M",
        "BSARIN-5TH-3E",
-       "BSADARIN-5TH-1M"
+       "BSARIN-5TH-7M",
+       "BSARIN-5TH-8M"
       ],
       "meetings": 4
      }
@@ -5854,10 +5861,10 @@
       "course_title": "Information Security",
       "delivery": "in-room",
       "sections": [
+       "BSADARIN-7TH-1M",
        "BSARIN-7TH-1M",
        "BSARIN-7TH-2M",
-       "BSARIN-7TH-4E",
-       "BSADARIN-7TH-1M"
+       "BSARIN-7TH-4E"
       ],
       "meetings": 3
      }
@@ -6136,10 +6143,10 @@
       "course_title": "Software Engineering",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-3RD-1E",
        "BSARIN-3RD-6M",
        "BSARIN-3RD-7M",
-       "BSARIN-3RD-8M",
-       "BSARIN-3RD-1E"
+       "BSARIN-3RD-8M"
       ],
       "meetings": 4
      }
@@ -6171,11 +6178,11 @@
       "course_title": "Software Engineering",
       "delivery": "in-room",
       "sections": [
-       "BSARIN-3RD-2M",
-       "BSARIN-3RD-3M",
-       "BSARIN-3RD-4M",
        "BSARIN-3RD-2E",
-       "BSARIN-3RD-3E"
+       "BSARIN-3RD-2M",
+       "BSARIN-3RD-3E",
+       "BSARIN-3RD-3M",
+       "BSARIN-3RD-4M"
       ],
       "meetings": 5
      }
@@ -6236,9 +6243,9 @@
       "course_title": "Parallel & Distributed Computing",
       "delivery": "in-room",
       "sections": [
+       "BSADARIN-7TH-1M",
        "BSARIN-7TH-3E",
-       "BSARIN-7TH-4E",
-       "BSADARIN-7TH-1M"
+       "BSARIN-7TH-4E"
       ],
       "meetings": 1
      }
@@ -6266,9 +6273,9 @@
       "course_title": "Data Structures",
       "delivery": "in-room",
       "sections": [
+       "BSARIN-3RD-2E",
        "BSARIN-3RD-7M",
-       "BSARIN-3RD-8M",
-       "BSARIN-3RD-2E"
+       "BSARIN-3RD-8M"
       ],
       "meetings": 3
      }
@@ -6293,8 +6300,8 @@
       "course_title": "Arabic for Understanding Quran",
       "delivery": "online",
       "sections": [
-       "BSARIN-3RD-6M",
-       "BSARIN-3RD-2E"
+       "BSARIN-3RD-2E",
+       "BSARIN-3RD-6M"
       ],
       "meetings": 1
      }
@@ -6320,9 +6327,9 @@
       "course_title": "Arabic for Understanding Quran",
       "delivery": "online",
       "sections": [
+       "BSARIN-3RD-3E",
        "BSARIN-3RD-7M",
-       "BSARIN-3RD-8M",
-       "BSARIN-3RD-3E"
+       "BSARIN-3RD-8M"
       ],
       "meetings": 2
      }
@@ -6349,10 +6356,10 @@
       "course_title": "Arabic for Understanding Quran",
       "delivery": "online",
       "sections": [
+       "BSARIN-3RD-1E",
        "BSARIN-3RD-1M",
        "BSARIN-3RD-4M",
-       "BSARIN-3RD-5M",
-       "BSARIN-3RD-1E"
+       "BSARIN-3RD-5M"
       ],
       "meetings": 2
      }
@@ -8053,7 +8060,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A001"
    },
    {
     "id": "P002",
@@ -8082,7 +8090,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A002"
    },
    {
     "id": "P003",
@@ -8111,7 +8120,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A003"
    },
    {
     "id": "P004",
@@ -8141,7 +8151,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A004"
    },
    {
     "id": "P005",
@@ -8170,7 +8181,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A005"
    },
    {
     "id": "P006",
@@ -8200,7 +8212,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A006"
    },
    {
     "id": "P007",
@@ -8230,7 +8243,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A007"
    },
    {
     "id": "P008",
@@ -8260,7 +8274,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A008"
    },
    {
     "id": "P009",
@@ -8290,7 +8305,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A009"
    },
    {
     "id": "P010",
@@ -8320,7 +8336,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A010"
    },
    {
     "id": "P011",
@@ -8350,7 +8367,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A011"
    },
    {
     "id": "P012",
@@ -8379,7 +8397,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A012"
    },
    {
     "id": "P013",
@@ -8408,7 +8427,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A013"
    },
    {
     "id": "P014",
@@ -8438,7 +8458,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A014"
    },
    {
     "id": "P015",
@@ -8468,7 +8489,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A015"
    },
    {
     "id": "P016",
@@ -8498,7 +8520,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A004"
    },
    {
     "id": "P017",
@@ -8528,7 +8551,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A016"
    },
    {
     "id": "P018",
@@ -8557,7 +8581,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A017"
    },
    {
     "id": "P019",
@@ -8587,7 +8612,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A018"
    },
    {
     "id": "P020",
@@ -8617,7 +8643,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A019"
    },
    {
     "id": "P021",
@@ -8646,7 +8673,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A013"
    },
    {
     "id": "P022",
@@ -8676,7 +8704,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A020"
    },
    {
     "id": "P023",
@@ -8706,7 +8735,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A021"
    },
    {
     "id": "P024",
@@ -8735,7 +8765,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A022"
    },
    {
     "id": "P025",
@@ -8765,7 +8796,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A023"
    },
    {
     "id": "P026",
@@ -8794,7 +8826,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A012"
    },
    {
     "id": "P027",
@@ -8823,7 +8856,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A017"
    },
    {
     "id": "P028",
@@ -8854,7 +8888,8 @@
     "level": "graduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A024"
    },
    {
     "id": "P029",
@@ -8884,7 +8919,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A015"
    },
    {
     "id": "P030",
@@ -8914,7 +8950,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A025"
    },
    {
     "id": "P031",
@@ -8944,7 +8981,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A018"
    },
    {
     "id": "P032",
@@ -8973,7 +9011,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A003"
    },
    {
     "id": "P033",
@@ -9003,7 +9042,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A011"
    },
    {
     "id": "P034",
@@ -9033,7 +9073,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A026"
    },
    {
     "id": "P035",
@@ -9062,7 +9103,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A027"
    },
    {
     "id": "P036",
@@ -9091,7 +9133,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A028"
    },
    {
     "id": "P037",
@@ -9121,7 +9164,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A029"
    },
    {
     "id": "P038",
@@ -9151,7 +9195,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A030"
    },
    {
     "id": "P039",
@@ -9181,7 +9226,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A031"
    },
    {
     "id": "P040",
@@ -9210,7 +9256,8 @@
     "level": "undergraduate",
     "session": "Spring-23",
     "semester": 8,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A032"
    },
    {
     "id": "P041",
@@ -9239,7 +9286,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A033"
    },
    {
     "id": "P042",
@@ -9269,7 +9317,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A034"
    },
    {
     "id": "P043",
@@ -9299,7 +9348,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A035"
    },
    {
     "id": "P044",
@@ -9329,7 +9379,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A036"
    },
    {
     "id": "P045",
@@ -9359,7 +9410,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A037"
    },
    {
     "id": "P046",
@@ -9389,7 +9441,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A038"
    },
    {
     "id": "P047",
@@ -9418,7 +9471,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A039"
    },
    {
     "id": "P048",
@@ -9447,7 +9501,8 @@
     "level": "undergraduate",
     "session": "Spring-23",
     "semester": 8,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A040"
    },
    {
     "id": "P049",
@@ -9476,7 +9531,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A041"
    },
    {
     "id": "P050",
@@ -9505,7 +9561,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A042"
    },
    {
     "id": "P051",
@@ -9534,7 +9591,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A043"
    },
    {
     "id": "P052",
@@ -9563,7 +9621,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A001"
    },
    {
     "id": "P053",
@@ -9592,7 +9651,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A012"
    },
    {
     "id": "P054",
@@ -9622,7 +9682,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A044"
    },
    {
     "id": "P055",
@@ -9652,7 +9713,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A023"
    },
    {
     "id": "P056",
@@ -9682,7 +9744,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A045"
    },
    {
     "id": "P057",
@@ -9712,7 +9775,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A021"
    },
    {
     "id": "P058",
@@ -9742,7 +9806,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A046"
    },
    {
     "id": "P059",
@@ -9772,7 +9837,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A047"
    },
    {
     "id": "P060",
@@ -9802,7 +9868,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A031"
    },
    {
     "id": "P061",
@@ -9832,7 +9899,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A048"
    },
    {
     "id": "P062",
@@ -9862,7 +9930,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A009"
    },
    {
     "id": "P063",
@@ -9891,7 +9960,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A017"
    },
    {
     "id": "P064",
@@ -9920,7 +9990,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A013"
    },
    {
     "id": "P065",
@@ -9950,7 +10021,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A026"
    },
    {
     "id": "P066",
@@ -9980,7 +10052,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A049"
    },
    {
     "id": "P067",
@@ -10009,7 +10082,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A050"
    },
    {
     "id": "P068",
@@ -10039,7 +10113,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A051"
    },
    {
     "id": "P069",
@@ -10069,7 +10144,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A052"
    },
    {
     "id": "P070",
@@ -10099,7 +10175,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A018"
    },
    {
     "id": "P071",
@@ -10129,7 +10206,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A053"
    },
    {
     "id": "P072",
@@ -10159,7 +10237,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A054"
    },
    {
     "id": "P073",
@@ -10189,7 +10268,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A055"
    },
    {
     "id": "P074",
@@ -10218,7 +10298,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A013"
    },
    {
     "id": "P075",
@@ -10247,7 +10328,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A017"
    },
    {
     "id": "P076",
@@ -10276,7 +10358,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A022"
    },
    {
     "id": "P077",
@@ -10306,7 +10389,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A009"
    },
    {
     "id": "P078",
@@ -10336,7 +10420,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A056"
    },
    {
     "id": "P079",
@@ -10365,7 +10450,8 @@
     "level": "undergraduate",
     "session": "Spring-23",
     "semester": 8,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A057"
    },
    {
     "id": "P080",
@@ -10394,7 +10480,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A006"
    },
    {
     "id": "P081",
@@ -10424,7 +10511,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A058"
    },
    {
     "id": "P082",
@@ -10454,7 +10542,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A010"
    },
    {
     "id": "P083",
@@ -10484,7 +10573,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A025"
    },
    {
     "id": "P084",
@@ -10513,7 +10603,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A059"
    },
    {
     "id": "P085",
@@ -10542,7 +10633,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A027"
    },
    {
     "id": "P086",
@@ -10571,7 +10663,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A022"
    },
    {
     "id": "P087",
@@ -10601,7 +10694,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A060"
    },
    {
     "id": "P088",
@@ -10631,7 +10725,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A007"
    },
    {
     "id": "P089",
@@ -10661,7 +10756,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A061"
    },
    {
     "id": "P090",
@@ -10690,7 +10786,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A062"
    },
    {
     "id": "P091",
@@ -10719,7 +10816,8 @@
     "level": "undergraduate",
     "session": "Spring-23",
     "semester": 8,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A057"
    },
    {
     "id": "P092",
@@ -10750,7 +10848,8 @@
     "session": "Spring-26",
     "semester": 2,
     "delivery": "in-room",
-    "fixed_by_department": true
+    "fixed_by_department": true,
+    "allocation_id": "A063"
    },
    {
     "id": "P093",
@@ -10779,7 +10878,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A041"
    },
    {
     "id": "P094",
@@ -10808,7 +10908,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A003"
    },
    {
     "id": "P095",
@@ -10837,7 +10938,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A059"
    },
    {
     "id": "P096",
@@ -10866,7 +10968,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A064"
    },
    {
     "id": "P097",
@@ -10896,7 +10999,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A008"
    },
    {
     "id": "P098",
@@ -10926,7 +11030,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A007"
    },
    {
     "id": "P099",
@@ -10956,7 +11061,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A034"
    },
    {
     "id": "P100",
@@ -10985,7 +11091,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A065"
    },
    {
     "id": "P101",
@@ -11014,7 +11121,8 @@
     "level": "undergraduate",
     "session": "Spring-23",
     "semester": 8,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A040"
    },
    {
     "id": "P102",
@@ -11043,7 +11151,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A042"
    },
    {
     "id": "P103",
@@ -11072,7 +11181,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A066"
    },
    {
     "id": "P104",
@@ -11101,7 +11211,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A043"
    },
    {
     "id": "P105",
@@ -11131,7 +11242,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A067"
    },
    {
     "id": "P106",
@@ -11161,7 +11273,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A054"
    },
    {
     "id": "P107",
@@ -11190,7 +11303,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A068"
    },
    {
     "id": "P108",
@@ -11219,7 +11333,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A069"
    },
    {
     "id": "P109",
@@ -11248,7 +11363,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A070"
    },
    {
     "id": "P110",
@@ -11277,7 +11393,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A071"
    },
    {
     "id": "P111",
@@ -11307,7 +11424,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A072"
    },
    {
     "id": "P112",
@@ -11337,7 +11455,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A073"
    },
    {
     "id": "P113",
@@ -11367,7 +11486,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A051"
    },
    {
     "id": "P114",
@@ -11397,7 +11517,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A074"
    },
    {
     "id": "P115",
@@ -11427,7 +11548,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A075"
    },
    {
     "id": "P116",
@@ -11457,7 +11579,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A076"
    },
    {
     "id": "P117",
@@ -11487,7 +11610,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A011"
    },
    {
     "id": "P118",
@@ -11517,7 +11641,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A052"
    },
    {
     "id": "P119",
@@ -11547,7 +11672,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A018"
    },
    {
     "id": "P120",
@@ -11576,7 +11702,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A077"
    },
    {
     "id": "P121",
@@ -11606,7 +11733,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A058"
    },
    {
     "id": "P122",
@@ -11636,7 +11764,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A053"
    },
    {
     "id": "P123",
@@ -11665,7 +11794,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A078"
    },
    {
     "id": "P124",
@@ -11694,7 +11824,8 @@
     "level": "undergraduate",
     "session": "Spring-23",
     "semester": 8,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A057"
    },
    {
     "id": "P125",
@@ -11724,7 +11855,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A072"
    },
    {
     "id": "P126",
@@ -11754,7 +11886,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A073"
    },
    {
     "id": "P127",
@@ -11784,7 +11917,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A075"
    },
    {
     "id": "P128",
@@ -11815,7 +11949,8 @@
     "session": "Spring-26",
     "semester": 2,
     "delivery": "in-room",
-    "fixed_by_department": true
+    "fixed_by_department": true,
+    "allocation_id": "A079"
    },
    {
     "id": "P129",
@@ -11845,7 +11980,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A049"
    },
    {
     "id": "P130",
@@ -11874,7 +12010,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A080"
    },
    {
     "id": "P131",
@@ -11903,7 +12040,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A081"
    },
    {
     "id": "P132",
@@ -11933,7 +12071,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A015"
    },
    {
     "id": "P133",
@@ -11963,7 +12102,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A076"
    },
    {
     "id": "P134",
@@ -11993,7 +12133,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A009"
    },
    {
     "id": "P135",
@@ -12023,7 +12164,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A082"
    },
    {
     "id": "P136",
@@ -12052,7 +12194,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A064"
    },
    {
     "id": "P137",
@@ -12082,7 +12225,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A083"
    },
    {
     "id": "P138",
@@ -12111,7 +12255,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A084"
    },
    {
     "id": "P139",
@@ -12140,7 +12285,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A033"
    },
    {
     "id": "P140",
@@ -12169,7 +12315,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A006"
    },
    {
     "id": "P141",
@@ -12199,7 +12346,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A085"
    },
    {
     "id": "P142",
@@ -12229,7 +12377,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A086"
    },
    {
     "id": "P143",
@@ -12259,7 +12408,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A075"
    },
    {
     "id": "P144",
@@ -12290,7 +12440,8 @@
     "session": "Spring-26",
     "semester": 2,
     "delivery": "in-room",
-    "fixed_by_department": true
+    "fixed_by_department": true,
+    "allocation_id": "A087"
    },
    {
     "id": "P145",
@@ -12321,7 +12472,8 @@
     "level": "graduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A088"
    },
    {
     "id": "P146",
@@ -12350,7 +12502,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A081"
    },
    {
     "id": "P147",
@@ -12379,7 +12532,8 @@
     "level": "undergraduate",
     "session": "Spring-23",
     "semester": 8,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A032"
    },
    {
     "id": "P148",
@@ -12409,7 +12563,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A018"
    },
    {
     "id": "P149",
@@ -12438,7 +12593,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A064"
    },
    {
     "id": "P150",
@@ -12467,7 +12623,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A028"
    },
    {
     "id": "P151",
@@ -12497,7 +12654,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A061"
    },
    {
     "id": "P152",
@@ -12527,7 +12685,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A089"
    },
    {
     "id": "P153",
@@ -12557,7 +12716,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A014"
    },
    {
     "id": "P154",
@@ -12587,7 +12747,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A090"
    },
    {
     "id": "P155",
@@ -12617,7 +12778,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A011"
    },
    {
     "id": "P156",
@@ -12646,7 +12808,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A039"
    },
    {
     "id": "P157",
@@ -12675,7 +12838,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A065"
    },
    {
     "id": "P158",
@@ -12704,7 +12868,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A002"
    },
    {
     "id": "P159",
@@ -12733,7 +12898,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A001"
    },
    {
     "id": "P160",
@@ -12762,7 +12928,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A081"
    },
    {
     "id": "P161",
@@ -12791,7 +12958,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A005"
    },
    {
     "id": "P162",
@@ -12820,7 +12988,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A027"
    },
    {
     "id": "P163",
@@ -12849,7 +13018,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A068"
    },
    {
     "id": "P164",
@@ -12879,7 +13049,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A031"
    },
    {
     "id": "P165",
@@ -12909,7 +13080,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A048"
    },
    {
     "id": "P166",
@@ -12939,7 +13111,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A004"
    },
    {
     "id": "P167",
@@ -12968,7 +13141,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A080"
    },
    {
     "id": "P168",
@@ -12998,7 +13172,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A091"
    },
    {
     "id": "P169",
@@ -13027,7 +13202,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A042"
    },
    {
     "id": "P170",
@@ -13056,7 +13232,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A006"
    },
    {
     "id": "P171",
@@ -13086,7 +13263,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A026"
    },
    {
     "id": "P172",
@@ -13115,7 +13293,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A078"
    },
    {
     "id": "P173",
@@ -13145,7 +13324,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A074"
    },
    {
     "id": "P174",
@@ -13174,7 +13354,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A092"
    },
    {
     "id": "P175",
@@ -13204,7 +13385,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A055"
    },
    {
     "id": "P176",
@@ -13233,7 +13415,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A081"
    },
    {
     "id": "P177",
@@ -13262,7 +13445,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A093"
    },
    {
     "id": "P178",
@@ -13292,7 +13476,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A023"
    },
    {
     "id": "P179",
@@ -13321,7 +13506,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A080"
    },
    {
     "id": "P180",
@@ -13350,7 +13536,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A094"
    },
    {
     "id": "P181",
@@ -13380,7 +13567,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A095"
    },
    {
     "id": "P182",
@@ -13410,7 +13598,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A083"
    },
    {
     "id": "P183",
@@ -13440,7 +13629,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A004"
    },
    {
     "id": "P184",
@@ -13470,7 +13660,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A015"
    },
    {
     "id": "P185",
@@ -13499,7 +13690,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A042"
    },
    {
     "id": "P186",
@@ -13529,7 +13721,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A020"
    },
    {
     "id": "P187",
@@ -13559,7 +13752,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A096"
    },
    {
     "id": "P188",
@@ -13589,7 +13783,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A076"
    },
    {
     "id": "P189",
@@ -13619,7 +13814,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A072"
    },
    {
     "id": "P190",
@@ -13650,7 +13846,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A021"
    },
    {
     "id": "P191",
@@ -13679,7 +13876,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A094"
    },
    {
     "id": "P192",
@@ -13709,7 +13907,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A097"
    },
    {
     "id": "P193",
@@ -13739,7 +13938,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A074"
    },
    {
     "id": "P194",
@@ -13769,7 +13969,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A026"
    },
    {
     "id": "P195",
@@ -13799,7 +14000,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A091"
    },
    {
     "id": "P196",
@@ -13828,7 +14030,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A042"
    },
    {
     "id": "P197",
@@ -13858,7 +14061,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A056"
    },
    {
     "id": "P198",
@@ -13888,7 +14092,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A015"
    },
    {
     "id": "P199",
@@ -13918,7 +14123,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A049"
    },
    {
     "id": "P200",
@@ -13948,7 +14154,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A098"
    },
    {
     "id": "P201",
@@ -13978,7 +14185,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A072"
    },
    {
     "id": "P202",
@@ -14007,7 +14215,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A099"
    },
    {
     "id": "P203",
@@ -14037,7 +14246,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A096"
    },
    {
     "id": "P204",
@@ -14066,7 +14276,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A078"
    },
    {
     "id": "P205",
@@ -14095,7 +14306,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A070"
    },
    {
     "id": "P206",
@@ -14126,7 +14338,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A010"
    },
    {
     "id": "P207",
@@ -14156,7 +14369,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A035"
    },
    {
     "id": "P208",
@@ -14186,7 +14400,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A097"
    },
    {
     "id": "P209",
@@ -14215,7 +14430,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A043"
    },
    {
     "id": "P210",
@@ -14245,7 +14461,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A075"
    },
    {
     "id": "P211",
@@ -14274,7 +14491,8 @@
     "level": "undergraduate",
     "session": "Spring-23",
     "semester": 8,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A032"
    },
    {
     "id": "P212",
@@ -14305,7 +14523,8 @@
     "level": "graduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A100"
    },
    {
     "id": "P213",
@@ -14335,7 +14554,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A052"
    },
    {
     "id": "P214",
@@ -14365,7 +14585,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A101"
    },
    {
     "id": "P215",
@@ -14395,7 +14616,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A018"
    },
    {
     "id": "P216",
@@ -14425,7 +14647,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A054"
    },
    {
     "id": "P217",
@@ -14456,7 +14679,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A102"
    },
    {
     "id": "P218",
@@ -14485,7 +14709,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A066"
    },
    {
     "id": "P219",
@@ -14514,7 +14739,8 @@
     "level": "undergraduate",
     "session": "Spring-23",
     "semester": 8,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A040"
    },
    {
     "id": "P220",
@@ -14543,7 +14769,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A103"
    },
    {
     "id": "P221",
@@ -14572,7 +14799,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A041"
    },
    {
     "id": "P222",
@@ -14602,7 +14830,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A038"
    },
    {
     "id": "P223",
@@ -14631,7 +14860,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A062"
    },
    {
     "id": "P224",
@@ -14660,7 +14890,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A005"
    },
    {
     "id": "P225",
@@ -14690,7 +14921,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A034"
    },
    {
     "id": "P226",
@@ -14720,7 +14952,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A101"
    },
    {
     "id": "P227",
@@ -14749,7 +14982,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A053"
    },
    {
     "id": "P228",
@@ -14778,7 +15012,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A080"
    },
    {
     "id": "P229",
@@ -14808,7 +15043,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A029"
    },
    {
     "id": "P230",
@@ -14838,7 +15074,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A089"
    },
    {
     "id": "P231",
@@ -14868,7 +15105,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A051"
    },
    {
     "id": "P232",
@@ -14898,7 +15136,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A008"
    },
    {
     "id": "P233",
@@ -14928,7 +15167,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A046"
    },
    {
     "id": "P234",
@@ -14957,7 +15197,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A104"
    },
    {
     "id": "P235",
@@ -14986,7 +15227,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A012"
    },
    {
     "id": "P236",
@@ -15015,7 +15257,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A105"
    },
    {
     "id": "P237",
@@ -15044,7 +15287,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A080"
    },
    {
     "id": "P238",
@@ -15073,7 +15317,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A094"
    },
    {
     "id": "P239",
@@ -15103,7 +15348,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A086"
    },
    {
     "id": "P240",
@@ -15133,7 +15379,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A014"
    },
    {
     "id": "P241",
@@ -15162,7 +15409,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A041"
    },
    {
     "id": "P242",
@@ -15192,7 +15440,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A082"
    },
    {
     "id": "P243",
@@ -15222,7 +15471,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A098"
    },
    {
     "id": "P244",
@@ -15252,7 +15502,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A073"
    },
    {
     "id": "P245",
@@ -15282,7 +15533,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A058"
    },
    {
     "id": "P246",
@@ -15311,7 +15563,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A002"
    },
    {
     "id": "P247",
@@ -15340,7 +15593,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A093"
    },
    {
     "id": "P248",
@@ -15369,7 +15623,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A013"
    },
    {
     "id": "P249",
@@ -15398,7 +15653,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A043"
    },
    {
     "id": "P250",
@@ -15427,7 +15683,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A094"
    },
    {
     "id": "P251",
@@ -15456,7 +15713,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A092"
    },
    {
     "id": "P252",
@@ -15485,7 +15743,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A039"
    },
    {
     "id": "P253",
@@ -15516,7 +15775,8 @@
     "level": "graduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A106"
    },
    {
     "id": "P254",
@@ -15545,7 +15805,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A093"
    },
    {
     "id": "P255",
@@ -15574,7 +15835,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A002"
    },
    {
     "id": "P256",
@@ -15603,7 +15865,8 @@
     "level": "undergraduate",
     "session": "Spring-26",
     "semester": 2,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A104"
    },
    {
     "id": "P257",
@@ -15633,7 +15896,8 @@
     "level": "undergraduate",
     "session": "Fall-26",
     "semester": 1,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A020"
    },
    {
     "id": "P258",
@@ -15663,7 +15927,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A031"
    },
    {
     "id": "P259",
@@ -15693,7 +15958,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A058"
    },
    {
     "id": "P260",
@@ -15722,7 +15988,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A092"
    },
    {
     "id": "P261",
@@ -15751,7 +16018,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A066"
    },
    {
     "id": "P262",
@@ -15780,7 +16048,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A107"
    },
    {
     "id": "P263",
@@ -15809,7 +16078,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A066"
    },
    {
     "id": "P264",
@@ -15838,7 +16108,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A108"
    },
    {
     "id": "P265",
@@ -15867,7 +16138,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A005"
    },
    {
     "id": "P266",
@@ -15896,7 +16168,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A039"
    },
    {
     "id": "P267",
@@ -15926,7 +16199,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A054"
    },
    {
     "id": "P268",
@@ -15956,7 +16230,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A060"
    },
    {
     "id": "P269",
@@ -15986,7 +16261,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A051"
    },
    {
     "id": "P270",
@@ -16016,7 +16292,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A098"
    },
    {
     "id": "P271",
@@ -16046,7 +16323,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A046"
    },
    {
     "id": "P272",
@@ -16075,7 +16353,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A070"
    },
    {
     "id": "P273",
@@ -16105,7 +16384,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A109"
    },
    {
     "id": "P274",
@@ -16135,7 +16415,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A014"
    },
    {
     "id": "P275",
@@ -16165,7 +16446,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A007"
    },
    {
     "id": "P276",
@@ -16195,7 +16477,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A085"
    },
    {
     "id": "P277",
@@ -16225,7 +16508,8 @@
     "level": "undergraduate",
     "session": "Spring-25",
     "semester": 4,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A110"
    },
    {
     "id": "P278",
@@ -16255,7 +16539,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A111"
    },
    {
     "id": "P279",
@@ -16284,7 +16569,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A070"
    },
    {
     "id": "P280",
@@ -16313,7 +16599,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A092"
    },
    {
     "id": "P281",
@@ -16343,7 +16630,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A082"
    },
    {
     "id": "P282",
@@ -16373,7 +16661,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A089"
    },
    {
     "id": "P283",
@@ -16404,7 +16693,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A112"
    },
    {
     "id": "P284",
@@ -16434,7 +16724,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A113"
    },
    {
     "id": "P285",
@@ -16464,7 +16755,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A111"
    },
    {
     "id": "P286",
@@ -16494,7 +16786,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A114"
    },
    {
     "id": "P287",
@@ -16523,7 +16816,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A065"
    },
    {
     "id": "P288",
@@ -16555,7 +16849,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A115"
    },
    {
     "id": "P289",
@@ -16585,7 +16880,8 @@
     "level": "undergraduate",
     "session": "Fall-23",
     "semester": 7,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A113"
    },
    {
     "id": "P290",
@@ -16615,7 +16911,8 @@
     "level": "undergraduate",
     "session": "Fall-24",
     "semester": 5,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A008"
    },
    {
     "id": "P291",
@@ -16645,7 +16942,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A111"
    },
    {
     "id": "P292",
@@ -16675,7 +16973,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A016"
    },
    {
     "id": "P293",
@@ -16705,7 +17004,8 @@
     "level": "undergraduate",
     "session": "Spring-24",
     "semester": 6,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A038"
    },
    {
     "id": "P294",
@@ -16735,7 +17035,8 @@
     "level": "undergraduate",
     "session": "Fall-25",
     "semester": 3,
-    "delivery": "in-room"
+    "delivery": "in-room",
+    "allocation_id": "A023"
    }
   ],
   "common_courses": [
@@ -17582,259 +17883,2007 @@
     "reason": "MS/PhD Arabic removed by department decision, 23 Sep 2026"
    }
   ],
-  "unstaffed": []
+  "unstaffed": [],
+  "allocations": [
+   {
+    "id": "A001",
+    "course_id": "Fall-25|MATH-2102",
+    "course_code": "MATH-2102",
+    "course_title": "Linear Algebra",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Dr. Muhammad Yousaf Rafique",
+    "sections": [
+     "BSARIN-3RD-4M",
+     "BSARIN-3RD-5M",
+     "BSARIN-3RD-6M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A002",
+    "course_id": "Fall-26|MATH-1121",
+    "course_code": "MATH-1121",
+    "course_title": "Calculus & Analytical Geometry – IDS I",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Zubair Ahmad",
+    "sections": [
+     "BSARIN-1ST-10M",
+     "BSARIN-1ST-5M",
+     "BSARIN-1ST-6M",
+     "BSARIN-1ST-9M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A003",
+    "course_id": "Fall-26|ARIN-XXXX",
+    "course_code": "ARIN-XXXX",
+    "course_title": "Quantitative Reasoning-I",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Dr. Muhammad Shahzad Shabbir",
+    "sections": [
+     "BSARIN-1ST-1M",
+     "BSARIN-1ST-2M",
+     "BSARIN-1ST-3M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A004",
+    "course_id": "Spring-25|ARIN-1111",
+    "course_code": "ARIN-1111",
+    "course_title": "Computer Networks",
+    "credit_hours": "3(2-1)",
+    "session": "Spring-25",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Sufyan Majeed",
+    "sections": [
+     "BSARIN-4TH-1E",
+     "BSARIN-4TH-1M",
+     "BSARIN-4TH-2M",
+     "BSARIN-4TH-3M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A005",
+    "course_id": "Fall-24|ARIN-2138",
+    "course_code": "ARIN-2138",
+    "course_title": "Domain Elective 2 (Web Programming)",
+    "credit_hours": "3(3-0)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Naeem Iqbal",
+    "sections": [
+     "BSADARIN-5TH-1M",
+     "BSARIN-5TH-6M",
+     "BSARIN-5TH-7M",
+     "BSARIN-5TH-8M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A006",
+    "course_id": "Fall-25|ARIN- 1110",
+    "course_code": "ARIN- 1110",
+    "course_title": "Software Engineering",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Ms. Rimsha Asad",
+    "sections": [
+     "BSARIN-3RD-1E",
+     "BSARIN-3RD-6M",
+     "BSARIN-3RD-7M",
+     "BSARIN-3RD-8M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A007",
+    "course_id": "Fall-24|ARIN-1123",
+    "course_code": "ARIN-1123",
+    "course_title": "Domain Core 4 (Knowledge Representation & Reasoning)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Ms. Aqsa Khursheed",
+    "sections": [
+     "BSARIN-5TH-1M",
+     "BSARIN-5TH-2M",
+     "BSARIN-5TH-5M",
+     "BSARIN-5TH-6M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A008",
+    "course_id": "Fall-24|ARIN-1123",
+    "course_code": "ARIN-1123",
+    "course_title": "Domain Core 4 (Knowledge Representation & Reasoning)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Ms. Aqsa Younis",
+    "sections": [
+     "BSARIN-5TH-1E",
+     "BSARIN-5TH-2E",
+     "BSARIN-5TH-3M",
+     "BSARIN-5TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A009",
+    "course_id": "Fall-26|ARIN-1102",
+    "course_code": "ARIN-1102",
+    "course_title": "Programming Fundamentals",
+    "credit_hours": "4 (3-1)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Muhammad Yasir",
+    "sections": [
+     "BSARIN-1ST-10M",
+     "BSARIN-1ST-3M",
+     "BSARIN-1ST-4M",
+     "BSARIN-1ST-7M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A010",
+    "course_id": "Fall-23|ARIN-1115",
+    "course_code": "ARIN-1115",
+    "course_title": "Information Security",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-23",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Ms. Komal Azim",
+    "sections": [
+     "BSADARIN-7TH-1M",
+     "BSARIN-7TH-1M",
+     "BSARIN-7TH-2M",
+     "BSARIN-7TH-4E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A011",
+    "course_id": "Fall-25|ARIN-1120",
+    "course_code": "ARIN-1120",
+    "course_title": "Domain Core 1 (Programming for AI)",
+    "credit_hours": "3 (2-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Dr. Mobeen Shahroz",
+    "sections": [
+     "BSARIN-3RD-1E",
+     "BSARIN-3RD-3M",
+     "BSARIN-3RD-4M",
+     "BSARIN-3RD-7M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A012",
+    "course_id": "Fall-26|ARIN-XXXX",
+    "course_code": "ARIN-XXXX",
+    "course_title": "Quantitative Reasoning-I",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Syed Muhammad Umair Ud Din",
+    "sections": [
+     "BSARIN-1ST-4M",
+     "BSARIN-1ST-5M",
+     "BSARIN-1ST-6M",
+     "BSARIN-1ST-7M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A013",
+    "course_id": "Fall-26|MATH-1121",
+    "course_code": "MATH-1121",
+    "course_title": "Calculus & Analytical Geometry – IDS I",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 5,
+    "teacher": "Dr. Shafqat Ali",
+    "sections": [
+     "BSARIN-1ST-1E",
+     "BSARIN-1ST-1M",
+     "BSARIN-1ST-2M",
+     "BSARIN-1ST-3M",
+     "BSARIN-1ST-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A014",
+    "course_id": "Fall-24|ARIN-1122",
+    "course_code": "ARIN-1122",
+    "course_title": "Domain Core 3 (Artificial Neural Networks & Deep Learning)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Dr. Muhammad Shafiq",
+    "sections": [
+     "BSADARIN-5TH-1M",
+     "BSARIN-5TH-3E",
+     "BSARIN-5TH-7M",
+     "BSARIN-5TH-8M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A015",
+    "course_id": "Spring-25|ARIN-1121",
+    "course_code": "ARIN-1121",
+    "course_title": "Machine Learning",
+    "credit_hours": "3(2-1)",
+    "session": "Spring-25",
+    "delivery": "in-room",
+    "meetings_per_week": 5,
+    "teacher": "Mr. Syed Adnan Shah Bukhari",
+    "sections": [
+     "BSARIN-4TH-1E",
+     "BSARIN-4TH-1M",
+     "BSARIN-4TH-2M",
+     "BSARIN-4TH-3M",
+     "BSARIN-4TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A016",
+    "course_id": "Fall-25|ARIN-1120",
+    "course_code": "ARIN-1120",
+    "course_title": "Domain Core 1 (Programming for AI)",
+    "credit_hours": "3 (2-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Mr. Muhammad Hamza",
+    "sections": [
+     "BSARIN-3RD-2E",
+     "BSARIN-3RD-8M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A017",
+    "course_id": "Fall-24|ARIN-2169",
+    "course_code": "ARIN-2169",
+    "course_title": "Social Sciences (Organizational Behavior)",
+    "credit_hours": "3(3-0)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Dr. Waqas Mahmood",
+    "sections": [
+     "BSARIN-5TH-1M",
+     "BSARIN-5TH-2M",
+     "BSARIN-5TH-3M",
+     "BSARIN-5TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A018",
+    "course_id": "Fall-24|ARIN-1122",
+    "course_code": "ARIN-1122",
+    "course_title": "Domain Core 3 (Artificial Neural Networks & Deep Learning)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 6,
+    "teacher": "Mr. Haseeb Ali",
+    "sections": [
+     "BSARIN-5TH-1E",
+     "BSARIN-5TH-2E",
+     "BSARIN-5TH-2M",
+     "BSARIN-5TH-3M",
+     "BSARIN-5TH-4M",
+     "BSARIN-5TH-5M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A019",
+    "course_id": "Spring-26|ARIN-1106",
+    "course_code": "ARIN-1106",
+    "course_title": "Database Systems",
+    "credit_hours": "4 (3-1)",
+    "session": "Spring-26",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Mr. Muzammil Ur Rehman",
+    "sections": [
+     "BSARIN-2ND-3M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A020",
+    "course_id": "Fall-26|ARIN-1102",
+    "course_code": "ARIN-1102",
+    "course_title": "Programming Fundamentals",
+    "credit_hours": "4 (3-1)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Dr. Amna Ashraf",
+    "sections": [
+     "BSARIN-1ST-1E",
+     "BSARIN-1ST-8M",
+     "BSARIN-1ST-9M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A021",
+    "course_id": "Fall-23|ARIN- 1110",
+    "course_code": "ARIN- 1110",
+    "course_title": "Software Engineering",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-23",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Mr. Muhammad Nauman",
+    "sections": [
+     "BSADARIN-7TH-1M",
+     "BSARIN-7TH-1M",
+     "BSARIN-7TH-2M",
+     "BSARIN-7TH-4E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A022",
+    "course_id": "Fall-26|GSS-00006",
+    "course_code": "GSS-00006",
+    "course_title": "Social Science (Introduction to Digital Media)",
+    "credit_hours": "2 (2-0)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Dr. Hafsa Sania",
+    "sections": [
+     "BSARIN-1ST-3M",
+     "BSARIN-1ST-4M",
+     "BSARIN-1ST-5M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A023",
+    "course_id": "Fall-25|ARIN-1108",
+    "course_code": "ARIN-1108",
+    "course_title": "Data Structures",
+    "credit_hours": "4 (3-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Noman Raja",
+    "sections": [
+     "BSARIN-3RD-1E",
+     "BSARIN-3RD-3E",
+     "BSARIN-3RD-3M",
+     "BSARIN-3RD-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A024",
+    "course_id": "Fall-26|ARIN-3102",
+    "course_code": "ARIN-3102",
+    "course_title": "Advanced Algorithm Analysis",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Wareesa Sharif",
+    "sections": [
+     "MSARIN-1ST-1E",
+     "MSARIN-2ND-1E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A025",
+    "course_id": "Fall-24|ARIN-1113",
+    "course_code": "ARIN-1113",
+    "course_title": "Operating Systems",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Ms. Muniba Mazhar",
+    "sections": [
+     "BSARIN-5TH-3M",
+     "BSARIN-5TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A026",
+    "course_id": "Fall-25|ARIN-1120",
+    "course_code": "ARIN-1120",
+    "course_title": "Domain Core 1 (Programming for AI)",
+    "credit_hours": "3 (2-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Muzammil Ur Rehman",
+    "sections": [
+     "BSARIN-3RD-1M",
+     "BSARIN-3RD-2M",
+     "BSARIN-3RD-5M",
+     "BSARIN-3RD-6M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A027",
+    "course_id": "Fall-26|MATH-1121",
+    "course_code": "MATH-1121",
+    "course_title": "Calculus & Analytical Geometry – IDS I",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Dr. Muhammad Shahbaz",
+    "sections": [
+     "BSARIN-1ST-11M",
+     "BSARIN-1ST-7M",
+     "BSARIN-1ST-8M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A028",
+    "course_id": "Fall-26|ARIN-XXXX",
+    "course_code": "ARIN-XXXX",
+    "course_title": "Quantitative Reasoning-I",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Mr. Muhammad Inzmam Shabbir",
+    "sections": [
+     "BSARIN-1ST-8M",
+     "BSARIN-1ST-9M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A029",
+    "course_id": "Fall-24|ARIN-1113",
+    "course_code": "ARIN-1113",
+    "course_title": "Operating Systems",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Mr. Jahanzaib Munir",
+    "sections": [
+     "BSARIN-5TH-5M",
+     "BSARIN-5TH-6M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A030",
+    "course_id": "Fall-25|ARIN-1109",
+    "course_code": "ARIN-1109",
+    "course_title": "Digital Logic Design",
+    "credit_hours": "3 (2-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Sibtain Raza",
+    "sections": [
+     "BSARIN-3RD-1E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A031",
+    "course_id": "Fall-24|ARIN-1113",
+    "course_code": "ARIN-1113",
+    "course_title": "Operating Systems",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Zohaib Anwar",
+    "sections": [
+     "BSADARIN-5TH-1M",
+     "BSARIN-5TH-1M",
+     "BSARIN-5TH-2M",
+     "BSARIN-5TH-3E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A032",
+    "course_id": "Spring-23|ARIN-2158",
+    "course_code": "ARIN-2158",
+    "course_title": "Professional Practices",
+    "credit_hours": "3(3-0)",
+    "session": "Spring-23",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Ms. Rameen Fatima",
+    "sections": [
+     "BSARIN-8TH-1M",
+     "BSARIN-8TH-2M",
+     "BSARIN-8TH-3M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A033",
+    "course_id": "Fall-25|MATH-2102",
+    "course_code": "MATH-2102",
+    "course_title": "Linear Algebra",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Dr. Muhammad Aqeel Ahmad Khan",
+    "sections": [
+     "BSARIN-3RD-2M",
+     "BSARIN-3RD-3E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A034",
+    "course_id": "Fall-24|ARIN-2157",
+    "course_code": "ARIN-2157",
+    "course_title": "Domain Elective 4 (Natural Language Processing)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Mr. Muhammad Mohsin Abbas",
+    "sections": [
+     "BSARIN-5TH-4M",
+     "BSARIN-5TH-5M",
+     "BSARIN-5TH-8M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A035",
+    "course_id": "Fall-25|ARIN-1109",
+    "course_code": "ARIN-1109",
+    "course_title": "Digital Logic Design",
+    "credit_hours": "3 (2-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Dr. Maria Atiq",
+    "sections": [
+     "BSARIN-3RD-1M",
+     "BSARIN-3RD-2E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A036",
+    "course_id": "Fall-25|ARIN-1109",
+    "course_code": "ARIN-1109",
+    "course_title": "Digital Logic Design",
+    "credit_hours": "3 (2-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Muhammad Amir Rafiq",
+    "sections": [
+     "BSARIN-3RD-7M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A037",
+    "course_id": "Spring-24|ARIN-2157",
+    "course_code": "ARIN-2157",
+    "course_title": "Domain Elective 4 (Natural Language Processing)",
+    "credit_hours": "3(2-1)",
+    "session": "Spring-24",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Mr. Ahmad Hassan",
+    "sections": [
+     "BSARIN-6TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A038",
+    "course_id": "Spring-24|ARIN-2157",
+    "course_code": "ARIN-2157",
+    "course_title": "Domain Elective 4 (Natural Language Processing)",
+    "credit_hours": "3(2-1)",
+    "session": "Spring-24",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Mr. Abid Farooq",
+    "sections": [
+     "BSARIN-6TH-1M",
+     "BSARIN-6TH-2M",
+     "BSARIN-6TH-3M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A039",
+    "course_id": "Fall-24|ARIN-2138",
+    "course_code": "ARIN-2138",
+    "course_title": "Domain Elective 2 (Web Programming)",
+    "credit_hours": "3(3-0)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Sanaullah Sajjid",
+    "sections": [
+     "BSARIN-5TH-1E",
+     "BSARIN-5TH-2E",
+     "BSARIN-5TH-4M",
+     "BSARIN-5TH-5M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A040",
+    "course_id": "Spring-23|LAW-402",
+    "course_code": "LAW-402",
+    "course_title": "Constitution and Legal System of Pakistan",
+    "credit_hours": "3(3-0)",
+    "session": "Spring-23",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Mr. Aqil Nawaz",
+    "sections": [
+     "BSARIN-8TH-1M",
+     "BSARIN-8TH-2M",
+     "BSARIN-8TH-3M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A041",
+    "course_id": "Fall-25|MATH-2102",
+    "course_code": "MATH-2102",
+    "course_title": "Linear Algebra",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Dr. Ayesha Mahmood",
+    "sections": [
+     "BSARIN-3RD-1E",
+     "BSARIN-3RD-2E",
+     "BSARIN-3RD-7M",
+     "BSARIN-3RD-8M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A042",
+    "course_id": "Fall-25|ARIN- 1110",
+    "course_code": "ARIN- 1110",
+    "course_title": "Software Engineering",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 5,
+    "teacher": "Ms. Saba Tahir",
+    "sections": [
+     "BSARIN-3RD-2E",
+     "BSARIN-3RD-2M",
+     "BSARIN-3RD-3E",
+     "BSARIN-3RD-3M",
+     "BSARIN-3RD-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A043",
+    "course_id": "Fall-24|ARIN-2138",
+    "course_code": "ARIN-2138",
+    "course_title": "Domain Elective 2 (Web Programming)",
+    "credit_hours": "3(3-0)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Muhammad Sajjad Ghaffar",
+    "sections": [
+     "BSARIN-5TH-1M",
+     "BSARIN-5TH-2M",
+     "BSARIN-5TH-3E",
+     "BSARIN-5TH-3M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A044",
+    "course_id": "Spring-26|ARIN-1107",
+    "course_code": "ARIN-1107",
+    "course_title": "Artificial Intelligence",
+    "credit_hours": "3 (2-1)",
+    "session": "Spring-26",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Ms. Hira Ramzan",
+    "sections": [
+     "BSARIN-2ND-2M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A045",
+    "course_id": "Fall-25|ARIN-1109",
+    "course_code": "ARIN-1109",
+    "course_title": "Digital Logic Design",
+    "credit_hours": "3 (2-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Saba Saeed",
+    "sections": [
+     "BSARIN-3RD-5M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A046",
+    "course_id": "Spring-25|ARIN-1112",
+    "course_code": "ARIN-1112",
+    "course_title": "Computer Organization & Assembly Language",
+    "credit_hours": "3(2-1)",
+    "session": "Spring-25",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Mr. Muhammad Umar Naeem",
+    "sections": [
+     "BSARIN-4TH-2M",
+     "BSARIN-4TH-3M",
+     "BSARIN-4TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A047",
+    "course_id": "Spring-26|ARIN-1105",
+    "course_code": "ARIN-1105",
+    "course_title": "Object Oriented Programming",
+    "credit_hours": "4 (3-1)",
+    "session": "Spring-26",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Amna Ashraf",
+    "sections": [
+     "BSARIN-2ND-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A048",
+    "course_id": "Spring-25|ARIN-1112",
+    "course_code": "ARIN-1112",
+    "course_title": "Computer Organization & Assembly Language",
+    "credit_hours": "3(2-1)",
+    "session": "Spring-25",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Mr. Muhammad Aqib Hussain",
+    "sections": [
+     "BSARIN-4TH-1E",
+     "BSARIN-4TH-1M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A049",
+    "course_id": "Spring-26|ARIN-1105",
+    "course_code": "ARIN-1105",
+    "course_title": "Object Oriented Programming",
+    "credit_hours": "4 (3-1)",
+    "session": "Spring-26",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Dr. Mobeen Shahroz",
+    "sections": [
+     "BSARIN-2ND-1M",
+     "BSARIN-2ND-2M",
+     "BSARIN-2ND-3M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A050",
+    "course_id": "Fall-25|ARIN- 1110",
+    "course_code": "ARIN- 1110",
+    "course_title": "Software Engineering",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Mr. Muhammad Khizar Farooq",
+    "sections": [
+     "BSARIN-3RD-5M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A051",
+    "course_id": "Fall-23|ARIN-1125",
+    "course_code": "ARIN-1125",
+    "course_title": "Parallel & Distributed Computing",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-23",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Dr. Muhammad Amir Khan",
+    "sections": [
+     "BSARIN-7TH-1M",
+     "BSARIN-7TH-2M",
+     "BSARIN-7TH-3M",
+     "BSARIN-7TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A052",
+    "course_id": "Spring-26|ARIN-1107",
+    "course_code": "ARIN-1107",
+    "course_title": "Artificial Intelligence",
+    "credit_hours": "3 (2-1)",
+    "session": "Spring-26",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Mr. Syed Adnan Shah Bukhari",
+    "sections": [
+     "BSARIN-2ND-1M",
+     "BSARIN-2ND-3M",
+     "BSARIN-2ND-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A053",
+    "course_id": "Spring-25|ARIN-2150",
+    "course_code": "ARIN-2150",
+    "course_title": "Domain Elective 1 (Mobile Application Development)",
+    "credit_hours": "3(3-0)",
+    "session": "Spring-25",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Mr. Shahzad Hanif",
+    "sections": [
+     "BSARIN-4TH-1E",
+     "BSARIN-4TH-1M",
+     "BSARIN-4TH-2M",
+     "BSARIN-4TH-3M",
+     "BSARIN-4TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A054",
+    "course_id": "Fall-24|ARIN-1123",
+    "course_code": "ARIN-1123",
+    "course_title": "Domain Core 4 (Knowledge Representation & Reasoning)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Ms. Hunaina Arshad Chohan",
+    "sections": [
+     "BSADARIN-5TH-1M",
+     "BSARIN-5TH-3E",
+     "BSARIN-5TH-7M",
+     "BSARIN-5TH-8M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A055",
+    "course_id": "Fall-26|ARIN-1102",
+    "course_code": "ARIN-1102",
+    "course_title": "Programming Fundamentals",
+    "credit_hours": "4 (3-1)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Mr. Hafiz Raja Muhammad Ali",
+    "sections": [
+     "BSARIN-1ST-5M",
+     "BSARIN-1ST-6M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A056",
+    "course_id": "Fall-25|ARIN-1108",
+    "course_code": "ARIN-1108",
+    "course_title": "Data Structures",
+    "credit_hours": "4 (3-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Ms. Farhat Jalil",
+    "sections": [
+     "BSARIN-3RD-5M",
+     "BSARIN-3RD-6M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A057",
+    "course_id": "Spring-23|ARIN-1117",
+    "course_code": "ARIN-1117",
+    "course_title": "Software Engineering",
+    "credit_hours": "3(3-0)",
+    "session": "Spring-23",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Ms. Rabia Ejaz",
+    "sections": [
+     "BSARIN-8TH-1M",
+     "BSARIN-8TH-2M",
+     "BSARIN-8TH-3M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A058",
+    "course_id": "Fall-24|ARIN-1113",
+    "course_code": "ARIN-1113",
+    "course_title": "Operating Systems",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Muhammad Affaq",
+    "sections": [
+     "BSARIN-5TH-1E",
+     "BSARIN-5TH-2E",
+     "BSARIN-5TH-7M",
+     "BSARIN-5TH-8M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A059",
+    "course_id": "Fall-26|GSS-00006",
+    "course_code": "GSS-00006",
+    "course_title": "Social Science (Introduction to Digital Media)",
+    "credit_hours": "2 (2-0)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Dr. Hannan Khan Tareen",
+    "sections": [
+     "BSARIN-1ST-1M",
+     "BSARIN-1ST-2M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A060",
+    "course_id": "Fall-24|ARIN-1122",
+    "course_code": "ARIN-1122",
+    "course_title": "Domain Core 3 (Artificial Neural Networks & Deep Learning)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Ms. Eisha Fayyaz",
+    "sections": [
+     "BSARIN-5TH-1M",
+     "BSARIN-5TH-6M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A061",
+    "course_id": "Fall-25|ARIN-1108",
+    "course_code": "ARIN-1108",
+    "course_title": "Data Structures",
+    "credit_hours": "4 (3-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Mr. Asved Gillani",
+    "sections": [
+     "BSARIN-3RD-1M",
+     "BSARIN-3RD-2M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A062",
+    "course_id": "Fall-26|GSS-00006",
+    "course_code": "GSS-00006",
+    "course_title": "Social Science (Introduction to Digital Media)",
+    "credit_hours": "2 (2-0)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Dr. Qaiser Shakeel",
+    "sections": [
+     "BSARIN-1ST-6M",
+     "BSARIN-1ST-7M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A063",
+    "course_id": "Spring-26|ARIN-4165",
+    "course_code": "ARIN-4165",
+    "course_title": "AI Elective-IV - ( Academic Writing)",
+    "credit_hours": "3 (2-1)",
+    "session": "Spring-26",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Prof. Dr. Najia Saher",
+    "sections": [
+     "PHARIN-2ND-1E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A064",
+    "course_id": "Fall-26|GSS-00006",
+    "course_code": "GSS-00006",
+    "course_title": "Social Science (Introduction to Digital Media)",
+    "credit_hours": "2 (2-0)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Mr. Muhammad Raza Majid",
+    "sections": [
+     "BSARIN-1ST-10M",
+     "BSARIN-1ST-8M",
+     "BSARIN-1ST-9M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A065",
+    "course_id": "Spring-24|FMS-00193",
+    "course_code": "FMS-00193",
+    "course_title": "Entrepreneurship",
+    "credit_hours": "2(2-0)",
+    "session": "Spring-24",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Mr. Rizwan Arshad",
+    "sections": [
+     "BSARIN-6TH-1M",
+     "BSARIN-6TH-2M",
+     "BSARIN-6TH-3M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A066",
+    "course_id": "Spring-24|ARIN-1114",
+    "course_code": "ARIN-1114",
+    "course_title": "Analysis of Algorithms",
+    "credit_hours": "3(3-0)",
+    "session": "Spring-24",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Umer Farooq",
+    "sections": [
+     "BSARIN-6TH-1M",
+     "BSARIN-6TH-2M",
+     "BSARIN-6TH-3M",
+     "BSARIN-6TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A067",
+    "course_id": "Fall-26|ARIN-1102",
+    "course_code": "ARIN-1102",
+    "course_title": "Programming Fundamentals",
+    "credit_hours": "4 (3-1)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Ms. Maryam Murtaza",
+    "sections": [
+     "BSARIN-1ST-11M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A068",
+    "course_id": "Spring-26|MATH-1122",
+    "course_code": "MATH-1122",
+    "course_title": "Multivariable Calculus",
+    "credit_hours": "3 (3-0)",
+    "session": "Spring-26",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Dr. Muhammad Shahzad Shabbir",
+    "sections": [
+     "BSARIN-2ND-2M",
+     "BSARIN-2ND-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A069",
+    "course_id": "Fall-25|MATH-2102",
+    "course_code": "MATH-2102",
+    "course_title": "Linear Algebra",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Muhammad Shahbaz",
+    "sections": [
+     "BSARIN-3RD-3M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A070",
+    "course_id": "Fall-24|ARIN-2169",
+    "course_code": "ARIN-2169",
+    "course_title": "Social Sciences (Organizational Behavior)",
+    "credit_hours": "3(3-0)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Daood Ahmed",
+    "sections": [
+     "BSARIN-5TH-1E",
+     "BSARIN-5TH-2E",
+     "BSARIN-5TH-3E",
+     "BSARIN-5TH-8M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A071",
+    "course_id": "Spring-25|ARIN-2164",
+    "course_code": "ARIN-2164",
+    "course_title": "Social Sciences (Economy of Pakistan)",
+    "credit_hours": "3(3-0)",
+    "session": "Spring-25",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Ms. Shehzadi Younis",
+    "sections": [
+     "BSARIN-4TH-1E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A072",
+    "course_id": "Spring-24|ARIN-2137",
+    "course_code": "ARIN-2137",
+    "course_title": "Domain Elective 5 (Data Mining)",
+    "credit_hours": "3(2-1)",
+    "session": "Spring-24",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Ms. Marrium Aslam",
+    "sections": [
+     "BSARIN-6TH-1M",
+     "BSARIN-6TH-2M",
+     "BSARIN-6TH-3M",
+     "BSARIN-6TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A073",
+    "course_id": "Fall-23|ARIN-2112",
+    "course_code": "ARIN-2112",
+    "course_title": "Domain Elective 6 (Robotics)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-23",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Dr. Ghulam Gillani",
+    "sections": [
+     "BSARIN-7TH-1E",
+     "BSARIN-7TH-3M",
+     "BSARIN-7TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A074",
+    "course_id": "Fall-24|ARIN-2157",
+    "course_code": "ARIN-2157",
+    "course_title": "Domain Elective 4 (Natural Language Processing)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Dr. Wareesa Sharif",
+    "sections": [
+     "BSARIN-5TH-1M",
+     "BSARIN-5TH-2M",
+     "BSARIN-5TH-3M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A075",
+    "course_id": "Fall-23|ARIN-2112",
+    "course_code": "ARIN-2112",
+    "course_title": "Domain Elective 6 (Robotics)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-23",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Muzammil Ur Rehman",
+    "sections": [
+     "BSARIN-7TH-1M",
+     "BSARIN-7TH-2E",
+     "BSARIN-7TH-2M",
+     "BSARIN-7TH-3E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A076",
+    "course_id": "Spring-26|ARIN-1106",
+    "course_code": "ARIN-1106",
+    "course_title": "Database Systems",
+    "credit_hours": "4 (3-1)",
+    "session": "Spring-26",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Ms. Fizza Aslam",
+    "sections": [
+     "BSARIN-2ND-1M",
+     "BSARIN-2ND-2M",
+     "BSARIN-2ND-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A077",
+    "course_id": "Fall-26|GSS-00006",
+    "course_code": "GSS-00006",
+    "course_title": "Social Science (Introduction to Digital Media)",
+    "credit_hours": "2 (2-0)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Zahid Ahsan",
+    "sections": [
+     "BSARIN-1ST-11M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A078",
+    "course_id": "Fall-24|ARIN-2164",
+    "course_code": "ARIN-2164",
+    "course_title": "Social Sciences (Economy of Pakistan)",
+    "credit_hours": "3(3-0)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Ms. Shehzadi Younis",
+    "sections": [
+     "BSARIN-5TH-5M",
+     "BSARIN-5TH-6M",
+     "BSARIN-5TH-7M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A079",
+    "course_id": "Spring-26|ARIN-4111",
+    "course_code": "ARIN-4111",
+    "course_title": "Natural Language Processing",
+    "credit_hours": "3(2-1)",
+    "session": "Spring-26",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Wareesa Sharif",
+    "sections": [
+     "PHARIN-2ND-1E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A080",
+    "course_id": "Spring-25|STAT-302",
+    "course_code": "STAT-302",
+    "course_title": "Probability & Statistics",
+    "credit_hours": "3(3-0)",
+    "session": "Spring-25",
+    "delivery": "in-room",
+    "meetings_per_week": 5,
+    "teacher": "Dr. Azhar Hussain",
+    "sections": [
+     "BSARIN-4TH-1E",
+     "BSARIN-4TH-1M",
+     "BSARIN-4TH-2M",
+     "BSARIN-4TH-3M",
+     "BSARIN-4TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A081",
+    "course_id": "Spring-26|ARIN-1103",
+    "course_code": "ARIN-1103",
+    "course_title": "QR 2 (Discrete Structures)",
+    "credit_hours": "3 (3-0)",
+    "session": "Spring-26",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Ms. Aqsa Ashfaq",
+    "sections": [
+     "BSARIN-2ND-1M",
+     "BSARIN-2ND-2M",
+     "BSARIN-2ND-3M",
+     "BSARIN-2ND-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A082",
+    "course_id": "Fall-24|ARIN-2157",
+    "course_code": "ARIN-2157",
+    "course_title": "Domain Elective 4 (Natural Language Processing)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Mr. Ahmad Hassan",
+    "sections": [
+     "BSARIN-5TH-2E",
+     "BSARIN-5TH-6M",
+     "BSARIN-5TH-7M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A083",
+    "course_id": "Fall-24|ARIN-2157",
+    "course_code": "ARIN-2157",
+    "course_title": "Domain Elective 4 (Natural Language Processing)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Mr. Saeed Ahmad",
+    "sections": [
+     "BSADARIN-5TH-1M",
+     "BSARIN-5TH-3E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A084",
+    "course_id": "Fall-25|ARIN- 1110",
+    "course_code": "ARIN- 1110",
+    "course_title": "Software Engineering",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Ms. Rabia Ejaz",
+    "sections": [
+     "BSARIN-3RD-1M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A085",
+    "course_id": "Fall-23|ARIN- 1110",
+    "course_code": "ARIN- 1110",
+    "course_title": "Software Engineering",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-23",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Mr. Rao Zulqurnain Ali",
+    "sections": [
+     "BSARIN-7TH-1E",
+     "BSARIN-7TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A086",
+    "course_id": "Spring-24|ARIN-1124",
+    "course_code": "ARIN-1124",
+    "course_title": "Domain Core 5 (Computer Vision)",
+    "credit_hours": "3(2-1)",
+    "session": "Spring-24",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Mr. Muhammad Hamza",
+    "sections": [
+     "BSARIN-6TH-3M",
+     "BSARIN-6TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A087",
+    "course_id": "Spring-26|ARIN-4116",
+    "course_code": "ARIN-4116",
+    "course_title": "Computer Vision",
+    "credit_hours": "3 (2-1)",
+    "session": "Spring-26",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Ghulam Gillani",
+    "sections": [
+     "PHARIN-2ND-1E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A088",
+    "course_id": "Fall-26|ARIN-3103",
+    "course_code": "ARIN-3103",
+    "course_title": "AI Elective-I - (Advanced Research Methodology)",
+    "credit_hours": "3 (2-1)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Prof. Dr. Najia Saher",
+    "sections": [
+     "MSARIN-1ST-1E",
+     "MSARIN-2ND-1E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A089",
+    "course_id": "Fall-23|ARIN- 1110",
+    "course_code": "ARIN- 1110",
+    "course_title": "Software Engineering",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-23",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Mr. Muhammad Khizar Farooq",
+    "sections": [
+     "BSARIN-7TH-2E",
+     "BSARIN-7TH-3E",
+     "BSARIN-7TH-3M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A090",
+    "course_id": "Fall-25|ARIN-1109",
+    "course_code": "ARIN-1109",
+    "course_title": "Digital Logic Design",
+    "credit_hours": "3 (2-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Muhammad Shoaib",
+    "sections": [
+     "BSARIN-3RD-2M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A091",
+    "course_id": "Fall-25|ARIN-1109",
+    "course_code": "ARIN-1109",
+    "course_title": "Digital Logic Design",
+    "credit_hours": "3 (2-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Dr. H. Naeem-ur-Rehman",
+    "sections": [
+     "BSARIN-3RD-3M",
+     "BSARIN-3RD-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A092",
+    "course_id": "Spring-24|FAL-00282",
+    "course_code": "FAL-00282",
+    "course_title": "Expository Writing",
+    "credit_hours": "3(3-0)",
+    "session": "Spring-24",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Ms. Nosheen Khaliq",
+    "sections": [
+     "BSARIN-6TH-1M",
+     "BSARIN-6TH-2M",
+     "BSARIN-6TH-3M",
+     "BSARIN-6TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A093",
+    "course_id": "Fall-26|ARIN-XXXX",
+    "course_code": "ARIN-XXXX",
+    "course_title": "Quantitative Reasoning-I",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Ms. Huma Ikhlaq",
+    "sections": [
+     "BSARIN-1ST-10M",
+     "BSARIN-1ST-11M",
+     "BSARIN-1ST-1E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A094",
+    "course_id": "Spring-25|ARIN-2164",
+    "course_code": "ARIN-2164",
+    "course_title": "Social Sciences (Economy of Pakistan)",
+    "credit_hours": "3(3-0)",
+    "session": "Spring-25",
+    "delivery": "in-room",
+    "meetings_per_week": 4,
+    "teacher": "Mr. Shahzad Rahim",
+    "sections": [
+     "BSARIN-4TH-1M",
+     "BSARIN-4TH-2M",
+     "BSARIN-4TH-3M",
+     "BSARIN-4TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A095",
+    "course_id": "Fall-25|ARIN-1109",
+    "course_code": "ARIN-1109",
+    "course_title": "Digital Logic Design",
+    "credit_hours": "3 (2-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Mamoona Aslam",
+    "sections": [
+     "BSARIN-3RD-6M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A096",
+    "course_id": "Spring-24|ARIN-1124",
+    "course_code": "ARIN-1124",
+    "course_title": "Domain Core 5 (Computer Vision)",
+    "credit_hours": "3(2-1)",
+    "session": "Spring-24",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Dr. Ghulam Gillani",
+    "sections": [
+     "BSARIN-6TH-1M",
+     "BSARIN-6TH-2M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A097",
+    "course_id": "Fall-26|ARIN-1102",
+    "course_code": "ARIN-1102",
+    "course_title": "Programming Fundamentals",
+    "credit_hours": "4 (3-1)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Prof. Dr. Najia Saher",
+    "sections": [
+     "BSARIN-1ST-1M",
+     "BSARIN-1ST-2M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A098",
+    "course_id": "Fall-23|ARIN-1115",
+    "course_code": "ARIN-1115",
+    "course_title": "Information Security",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-23",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Ms. Abida Nawaz",
+    "sections": [
+     "BSARIN-7TH-1E",
+     "BSARIN-7TH-3M",
+     "BSARIN-7TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A099",
+    "course_id": "Fall-26|GSS-00006",
+    "course_code": "GSS-00006",
+    "course_title": "Social Science (Introduction to Digital Media)",
+    "credit_hours": "2 (2-0)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Shahid Rizwan",
+    "sections": [
+     "BSARIN-1ST-1E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A100",
+    "course_id": "Fall-26|ARIN-3110",
+    "course_code": "ARIN-3110",
+    "course_title": "AI Elective-I (Information Retrieval Systems)",
+    "credit_hours": "3 (2-1)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Malik Muhammad Saad Missen",
+    "sections": [
+     "MSARIN-1ST-1E",
+     "MSARIN-2ND-1E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A101",
+    "course_id": "Fall-25|ARIN-1109",
+    "course_code": "ARIN-1109",
+    "course_title": "Digital Logic Design",
+    "credit_hours": "3 (2-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Mr. Muhammad Asif",
+    "sections": [
+     "BSARIN-3RD-3E",
+     "BSARIN-3RD-8M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A102",
+    "course_id": "Fall-23|ARIN-1125",
+    "course_code": "ARIN-1125",
+    "course_title": "Parallel & Distributed Computing",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-23",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Ms. Anum Sahar",
+    "sections": [
+     "BSARIN-7TH-1E",
+     "BSARIN-7TH-2E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A103",
+    "course_id": "Fall-23|ENGL-1111",
+    "course_code": "ENGL-1111",
+    "course_title": "Technical and Business Writing",
+    "credit_hours": "3(3-0)",
+    "session": "Fall-23",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Ms. Rameen Fatima",
+    "sections": [
+     "BSADARIN-7TH-1M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A104",
+    "course_id": "Spring-26|MATH-1122",
+    "course_code": "MATH-1122",
+    "course_title": "Multivariable Calculus",
+    "credit_hours": "3 (3-0)",
+    "session": "Spring-26",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Dr. Shafqat Ali",
+    "sections": [
+     "BSARIN-2ND-1M",
+     "BSARIN-2ND-3M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A105",
+    "course_id": "Fall-24|ARIN-2169",
+    "course_code": "ARIN-2169",
+    "course_title": "Social Sciences (Organizational Behavior)",
+    "credit_hours": "3(3-0)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Mr. Rizwan Arshad",
+    "sections": [
+     "BSADARIN-5TH-1M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A106",
+    "course_id": "Fall-26|ARIN-3133",
+    "course_code": "ARIN-3133",
+    "course_title": "AI Elective-V (Deep Learning)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-26",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Ghulam Gillani",
+    "sections": [
+     "MSARIN-1ST-1E",
+     "MSARIN-2ND-1E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A107",
+    "course_id": "Fall-25|MATH-2102",
+    "course_code": "MATH-2102",
+    "course_title": "Linear Algebra",
+    "credit_hours": "3 (3-0)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Dr. Ghulam Abbas",
+    "sections": [
+     "BSARIN-3RD-1M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A108",
+    "course_id": "Spring-24|FMS-00193",
+    "course_code": "FMS-00193",
+    "course_title": "Entrepreneurship",
+    "credit_hours": "2(2-0)",
+    "session": "Spring-24",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Mr. Aqil Nawaz",
+    "sections": [
+     "BSARIN-6TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A109",
+    "course_id": "Fall-24|ARIN-2157",
+    "course_code": "ARIN-2157",
+    "course_title": "Domain Elective 4 (Natural Language Processing)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-24",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Mr. Suleman Ubaid",
+    "sections": [
+     "BSARIN-5TH-1E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A110",
+    "course_id": "Spring-25|ARIN-1111",
+    "course_code": "ARIN-1111",
+    "course_title": "Computer Networks",
+    "credit_hours": "3(2-1)",
+    "session": "Spring-25",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Ms. Maryam Rasheed",
+    "sections": [
+     "BSARIN-4TH-4M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A111",
+    "course_id": "Fall-25|ARIN-1108",
+    "course_code": "ARIN-1108",
+    "course_title": "Data Structures",
+    "credit_hours": "4 (3-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 3,
+    "teacher": "Ms. Sonia Jamil",
+    "sections": [
+     "BSARIN-3RD-2E",
+     "BSARIN-3RD-7M",
+     "BSARIN-3RD-8M"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A112",
+    "course_id": "Fall-23|ARIN-2112",
+    "course_code": "ARIN-2112",
+    "course_title": "Domain Elective 6 (Robotics)",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-23",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Mr. Asved Gillani",
+    "sections": [
+     "BSADARIN-7TH-1M",
+     "BSARIN-7TH-4E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A113",
+    "course_id": "Fall-23|ARIN-1115",
+    "course_code": "ARIN-1115",
+    "course_title": "Information Security",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-23",
+    "delivery": "in-room",
+    "meetings_per_week": 2,
+    "teacher": "Ms. Maryam Rasheed",
+    "sections": [
+     "BSARIN-7TH-2E",
+     "BSARIN-7TH-3E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A114",
+    "course_id": "Fall-25|ARIN-1120",
+    "course_code": "ARIN-1120",
+    "course_title": "Domain Core 1 (Programming for AI)",
+    "credit_hours": "3 (2-1)",
+    "session": "Fall-25",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Ms. Hira Ramzan",
+    "sections": [
+     "BSARIN-3RD-3E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   },
+   {
+    "id": "A115",
+    "course_id": "Fall-23|ARIN-1125",
+    "course_code": "ARIN-1125",
+    "course_title": "Parallel & Distributed Computing",
+    "credit_hours": "3(2-1)",
+    "session": "Fall-23",
+    "delivery": "in-room",
+    "meetings_per_week": 1,
+    "teacher": "Ms. Shumaila Yasin",
+    "sections": [
+     "BSADARIN-7TH-1M",
+     "BSARIN-7TH-3E",
+     "BSARIN-7TH-4E"
+    ],
+    "notes": "Auto-derived from existing timetable entries on first run."
+   }
+  ]
  },
  "index": {
   "by_section": {
-   "BSADARIN-5TH-1M": [
-    "P164",
-    "P182",
-    "P224",
-    "P236",
-    "P267",
-    "P274"
-   ],
-   "BSADARIN-7TH-1M": [
-    "P190",
-    "P206",
-    "P220",
-    "P283",
-    "P288"
-   ],
-   "BSARIN-1ST-10M": [
-    "P134",
-    "P149",
-    "P247",
-    "P255",
-    "C005",
-    "C020"
-   ],
-   "BSARIN-1ST-11M": [
-    "P105",
-    "P120",
-    "P162",
-    "P177",
-    "C006",
-    "C022"
-   ],
-   "BSARIN-1ST-1E": [
-    "P186",
-    "P202",
-    "P248",
-    "P254",
-    "C006",
-    "C022"
-   ],
-   "BSARIN-1ST-1M": [
-    "P021",
-    "P032",
-    "P095",
-    "P192",
-    "C001",
-    "C018"
-   ],
-   "BSARIN-1ST-2M": [
-    "P074",
-    "P084",
-    "P094",
-    "P208",
-    "C001",
-    "C021"
-   ],
-   "BSARIN-1ST-3M": [
-    "P003",
-    "P013",
-    "P062",
-    "P076",
-    "C002",
-    "C021"
-   ],
-   "BSARIN-1ST-4M": [
-    "P009",
-    "P024",
-    "P053",
-    "P064",
-    "C002",
-    "C017"
-   ],
-   "BSARIN-1ST-5M": [
-    "P002",
-    "P012",
-    "P073",
-    "P086",
-    "C003",
-    "C017"
-   ],
-   "BSARIN-1ST-6M": [
-    "P158",
-    "P175",
-    "P223",
-    "P235",
-    "C003",
-    "C018"
-   ],
-   "BSARIN-1ST-7M": [
-    "P026",
-    "P035",
-    "P077",
-    "P090",
-    "C004",
-    "C019"
-   ],
-   "BSARIN-1ST-8M": [
-    "P022",
-    "P036",
-    "P085",
-    "P096",
-    "C004",
-    "C019"
-   ],
-   "BSARIN-1ST-9M": [
-    "P136",
-    "P150",
-    "P246",
-    "P257",
-    "C005",
-    "C020"
-   ],
-   "BSARIN-2ND-1M": [
-    "P133",
-    "P146",
-    "P199",
-    "P213",
-    "P256",
-    "C007"
-   ],
-   "BSARIN-2ND-2M": [
-    "P054",
-    "P066",
-    "P163",
-    "P176",
-    "P188",
-    "C007"
-   ],
-   "BSARIN-2ND-3M": [
-    "P020",
-    "P118",
-    "P129",
-    "P160",
-    "P234",
-    "C008"
-   ],
-   "BSARIN-2ND-4M": [
-    "P059",
-    "P069",
-    "P107",
-    "P116",
-    "P131",
-    "C008"
-   ],
-   "BSARIN-3RD-1E": [
-    "P025",
-    "P038",
-    "P049",
-    "P140",
-    "P155",
-    "C011",
-    "C024"
-   ],
-   "BSARIN-3RD-1M": [
-    "P034",
-    "P043",
-    "P138",
-    "P151",
-    "P262",
-    "C014",
-    "C024"
-   ],
-   "BSARIN-3RD-2E": [
-    "P196",
-    "P207",
-    "P221",
-    "P285",
-    "P292",
-    "C015",
-    "C026"
-   ],
-   "BSARIN-3RD-2M": [
-    "P089",
-    "P102",
-    "P139",
-    "P154",
-    "P194",
-    "C009",
-    "C027"
-   ],
-   "BSARIN-3RD-3E": [
-    "P041",
-    "P050",
-    "P214",
-    "P286",
-    "P294",
-    "C012",
-    "C028"
-   ],
-   "BSARIN-3RD-3M": [
-    "P055",
-    "P108",
-    "P117",
-    "P168",
-    "P185",
-    "C009",
-    "C027"
-   ],
    "BSARIN-3RD-4M": [
+    "C014",
+    "C025",
     "P001",
     "P011",
     "P169",
     "P178",
-    "P195",
-    "C014",
-    "C025"
+    "P195"
    ],
-   "BSARIN-3RD-5M": [
-    "P056",
-    "P067",
-    "P078",
-    "P159",
-    "P171",
-    "C010",
-    "C025"
+   "BSARIN-1ST-5M": [
+    "C003",
+    "C017",
+    "P002",
+    "P012",
+    "P073",
+    "P086"
    ],
-   "BSARIN-3RD-6M": [
-    "P052",
-    "P065",
-    "P170",
-    "P181",
-    "P197",
-    "C010",
-    "C026"
+   "BSARIN-1ST-3M": [
+    "C002",
+    "C021",
+    "P003",
+    "P013",
+    "P062",
+    "P076"
    ],
-   "BSARIN-3RD-7M": [
-    "P033",
-    "P044",
-    "P080",
-    "P093",
-    "P291",
-    "C015",
-    "C023"
+   "BSARIN-4TH-2M": [
+    "P004",
+    "P015",
+    "P058",
+    "P071",
+    "P167",
+    "P180"
+   ],
+   "BSARIN-5TH-7M": [
+    "P005",
+    "P014",
+    "P072",
+    "P081",
+    "P123",
+    "P135"
    ],
    "BSARIN-3RD-8M": [
+    "C011",
+    "C023",
     "P006",
     "P017",
     "P226",
     "P241",
-    "P278",
-    "C011",
-    "C023"
+    "P278"
    ],
-   "BSARIN-4TH-1E": [
-    "P110",
-    "P165",
-    "P183",
-    "P198",
-    "P227",
-    "P237"
+   "BSARIN-5TH-2M": [
+    "P007",
+    "P018",
+    "P060",
+    "P070",
+    "P104",
+    "P114"
+   ],
+   "BSARIN-5TH-3M": [
+    "P008",
+    "P019",
+    "P030",
+    "P051",
+    "P063",
+    "P173"
+   ],
+   "BSARIN-1ST-4M": [
+    "C002",
+    "C017",
+    "P009",
+    "P024",
+    "P053",
+    "P064"
+   ],
+   "BSARIN-7TH-2M": [
+    "P010",
+    "P023",
+    "P113",
+    "P127"
    ],
    "BSARIN-4TH-1M": [
     "P016",
@@ -17844,13 +19893,260 @@
     "P179",
     "P191"
    ],
-   "BSARIN-4TH-2M": [
-    "P004",
-    "P015",
-    "P058",
-    "P071",
-    "P167",
-    "P180"
+   "BSARIN-2ND-3M": [
+    "C008",
+    "P020",
+    "P118",
+    "P129",
+    "P160",
+    "P234"
+   ],
+   "BSARIN-1ST-1M": [
+    "C001",
+    "C018",
+    "P021",
+    "P032",
+    "P095",
+    "P192"
+   ],
+   "BSARIN-1ST-8M": [
+    "C004",
+    "C019",
+    "P022",
+    "P036",
+    "P085",
+    "P096"
+   ],
+   "BSARIN-3RD-1E": [
+    "C011",
+    "C024",
+    "P025",
+    "P038",
+    "P049",
+    "P140",
+    "P155"
+   ],
+   "BSARIN-1ST-7M": [
+    "C004",
+    "C019",
+    "P026",
+    "P035",
+    "P077",
+    "P090"
+   ],
+   "BSARIN-5TH-1M": [
+    "P027",
+    "P039",
+    "P087",
+    "P098",
+    "P193",
+    "P209"
+   ],
+   "MSARIN-1ST-1E": [
+    "P028",
+    "P145",
+    "P212",
+    "P253"
+   ],
+   "MSARIN-2ND-1E": [
+    "P028",
+    "P145",
+    "P212",
+    "P253"
+   ],
+   "BSARIN-5TH-4M": [
+    "P031",
+    "P042",
+    "P075",
+    "P083",
+    "P097",
+    "P156"
+   ],
+   "BSARIN-3RD-7M": [
+    "C015",
+    "C023",
+    "P033",
+    "P044",
+    "P080",
+    "P093",
+    "P291"
+   ],
+   "BSARIN-3RD-1M": [
+    "C014",
+    "C024",
+    "P034",
+    "P043",
+    "P138",
+    "P151",
+    "P262"
+   ],
+   "BSARIN-5TH-5M": [
+    "P037",
+    "P047",
+    "P088",
+    "P099",
+    "P204",
+    "P215"
+   ],
+   "BSARIN-8TH-2M": [
+    "P040",
+    "P048",
+    "P124"
+   ],
+   "BSARIN-3RD-3E": [
+    "C012",
+    "C028",
+    "P041",
+    "P050",
+    "P214",
+    "P286",
+    "P294"
+   ],
+   "BSARIN-6TH-4M": [
+    "C013",
+    "P045",
+    "P125",
+    "P142",
+    "P251",
+    "P261",
+    "P264"
+   ],
+   "BSARIN-6TH-2M": [
+    "C016",
+    "P046",
+    "P100",
+    "P187",
+    "P201",
+    "P260",
+    "P263"
+   ],
+   "BSARIN-3RD-6M": [
+    "C010",
+    "C026",
+    "P052",
+    "P065",
+    "P170",
+    "P181",
+    "P197"
+   ],
+   "BSARIN-2ND-2M": [
+    "C007",
+    "P054",
+    "P066",
+    "P163",
+    "P176",
+    "P188"
+   ],
+   "BSARIN-3RD-3M": [
+    "C009",
+    "C027",
+    "P055",
+    "P108",
+    "P117",
+    "P168",
+    "P185"
+   ],
+   "BSARIN-3RD-5M": [
+    "C010",
+    "C025",
+    "P056",
+    "P067",
+    "P078",
+    "P159",
+    "P171"
+   ],
+   "BSARIN-7TH-1M": [
+    "P057",
+    "P068",
+    "P082",
+    "P115"
+   ],
+   "BSARIN-2ND-4M": [
+    "C008",
+    "P059",
+    "P069",
+    "P107",
+    "P116",
+    "P131"
+   ],
+   "BSARIN-1ST-2M": [
+    "C001",
+    "C021",
+    "P074",
+    "P084",
+    "P094",
+    "P208"
+   ],
+   "BSARIN-8TH-1M": [
+    "P079",
+    "P211",
+    "P219"
+   ],
+   "BSARIN-3RD-2M": [
+    "C009",
+    "C027",
+    "P089",
+    "P102",
+    "P139",
+    "P154",
+    "P194"
+   ],
+   "BSARIN-8TH-3M": [
+    "P091",
+    "P101",
+    "P147"
+   ],
+   "PHARIN-2ND-1E": [
+    "P092",
+    "P128",
+    "P144"
+   ],
+   "BSARIN-6TH-3M": [
+    "C013",
+    "P103",
+    "P111",
+    "P157",
+    "P174",
+    "P222",
+    "P239"
+   ],
+   "BSARIN-1ST-11M": [
+    "C006",
+    "C022",
+    "P105",
+    "P120",
+    "P162",
+    "P177"
+   ],
+   "BSARIN-5TH-8M": [
+    "P106",
+    "P121",
+    "P225",
+    "P240",
+    "P265",
+    "P272"
+   ],
+   "BSARIN-5TH-1E": [
+    "P109",
+    "P119",
+    "P232",
+    "P245",
+    "P266",
+    "P273"
+   ],
+   "BSARIN-4TH-1E": [
+    "P110",
+    "P165",
+    "P183",
+    "P198",
+    "P227",
+    "P237"
+   ],
+   "BSARIN-7TH-3M": [
+    "P112",
+    "P230",
+    "P243",
+    "P269"
    ],
    "BSARIN-4TH-3M": [
     "P122",
@@ -17868,37 +20164,35 @@
     "P271",
     "P277"
    ],
-   "BSARIN-5TH-1E": [
-    "P109",
-    "P119",
-    "P232",
-    "P245",
-    "P266",
-    "P273"
+   "BSARIN-7TH-1E": [
+    "P126",
+    "P141",
+    "P200",
+    "P217"
    ],
-   "BSARIN-5TH-1M": [
-    "P027",
-    "P039",
-    "P087",
-    "P098",
-    "P193",
-    "P209"
+   "BSARIN-2ND-1M": [
+    "C007",
+    "P133",
+    "P146",
+    "P199",
+    "P213",
+    "P256"
    ],
-   "BSARIN-5TH-2E": [
-    "P148",
-    "P252",
-    "P259",
-    "P279",
-    "P281",
-    "P290"
+   "BSARIN-1ST-10M": [
+    "C005",
+    "C020",
+    "P134",
+    "P149",
+    "P247",
+    "P255"
    ],
-   "BSARIN-5TH-2M": [
-    "P007",
-    "P018",
-    "P060",
-    "P070",
-    "P104",
-    "P114"
+   "BSARIN-1ST-9M": [
+    "C005",
+    "C020",
+    "P136",
+    "P150",
+    "P246",
+    "P257"
    ],
    "BSARIN-5TH-3E": [
     "P137",
@@ -17908,29 +20202,33 @@
     "P249",
     "P258"
    ],
-   "BSARIN-5TH-3M": [
-    "P008",
-    "P019",
-    "P030",
-    "P051",
-    "P063",
-    "P173"
+   "BSARIN-7TH-2E": [
+    "P143",
+    "P217",
+    "P282",
+    "P289"
    ],
-   "BSARIN-5TH-4M": [
-    "P031",
-    "P042",
-    "P075",
-    "P083",
-    "P097",
-    "P156"
+   "BSARIN-5TH-2E": [
+    "P148",
+    "P252",
+    "P259",
+    "P279",
+    "P281",
+    "P290"
    ],
-   "BSARIN-5TH-5M": [
-    "P037",
-    "P047",
-    "P088",
-    "P099",
-    "P204",
-    "P215"
+   "BSARIN-7TH-3E": [
+    "P152",
+    "P210",
+    "P284",
+    "P288"
+   ],
+   "BSARIN-1ST-6M": [
+    "C003",
+    "C018",
+    "P158",
+    "P175",
+    "P223",
+    "P235"
    ],
    "BSARIN-5TH-6M": [
     "P161",
@@ -17940,93 +20238,30 @@
     "P268",
     "P275"
    ],
-   "BSARIN-5TH-7M": [
-    "P005",
-    "P014",
-    "P072",
-    "P081",
-    "P123",
-    "P135"
+   "BSADARIN-5TH-1M": [
+    "P164",
+    "P182",
+    "P224",
+    "P236",
+    "P267",
+    "P274"
    ],
-   "BSARIN-5TH-8M": [
-    "P106",
-    "P121",
-    "P225",
-    "P240",
-    "P265",
-    "P272"
+   "BSARIN-1ST-1E": [
+    "C006",
+    "C022",
+    "P186",
+    "P202",
+    "P248",
+    "P254"
    ],
    "BSARIN-6TH-1M": [
+    "C012",
     "P189",
     "P203",
     "P218",
     "P280",
     "P287",
-    "P293",
-    "C012"
-   ],
-   "BSARIN-6TH-2M": [
-    "P046",
-    "P100",
-    "P187",
-    "P201",
-    "P260",
-    "P263",
-    "C016"
-   ],
-   "BSARIN-6TH-3M": [
-    "P103",
-    "P111",
-    "P157",
-    "P174",
-    "P222",
-    "P239",
-    "C013"
-   ],
-   "BSARIN-6TH-4M": [
-    "P045",
-    "P125",
-    "P142",
-    "P251",
-    "P261",
-    "P264",
-    "C013"
-   ],
-   "BSARIN-7TH-1E": [
-    "P126",
-    "P141",
-    "P200",
-    "P217"
-   ],
-   "BSARIN-7TH-1M": [
-    "P057",
-    "P068",
-    "P082",
-    "P115"
-   ],
-   "BSARIN-7TH-2E": [
-    "P143",
-    "P217",
-    "P282",
-    "P289"
-   ],
-   "BSARIN-7TH-2M": [
-    "P010",
-    "P023",
-    "P113",
-    "P127"
-   ],
-   "BSARIN-7TH-3E": [
-    "P152",
-    "P210",
-    "P284",
-    "P288"
-   ],
-   "BSARIN-7TH-3M": [
-    "P112",
-    "P230",
-    "P243",
-    "P269"
+    "P293"
    ],
    "BSARIN-7TH-4E": [
     "P190",
@@ -18034,167 +20269,40 @@
     "P283",
     "P288"
    ],
+   "BSADARIN-7TH-1M": [
+    "P190",
+    "P206",
+    "P220",
+    "P283",
+    "P288"
+   ],
+   "BSARIN-3RD-2E": [
+    "C015",
+    "C026",
+    "P196",
+    "P207",
+    "P221",
+    "P285",
+    "P292"
+   ],
    "BSARIN-7TH-4M": [
     "P231",
     "P244",
     "P270",
     "P276"
-   ],
-   "BSARIN-8TH-1M": [
-    "P079",
-    "P211",
-    "P219"
-   ],
-   "BSARIN-8TH-2M": [
-    "P040",
-    "P048",
-    "P124"
-   ],
-   "BSARIN-8TH-3M": [
-    "P091",
-    "P101",
-    "P147"
-   ],
-   "MSARIN-1ST-1E": [
-    "P028",
-    "P145",
-    "P212",
-    "P253"
-   ],
-   "MSARIN-2ND-1E": [
-    "P028",
-    "P145",
-    "P212",
-    "P253"
-   ],
-   "PHARIN-2ND-1E": [
-    "P092",
-    "P128",
-    "P144"
    ]
   },
   "by_teacher": {
-   "Ali Raza": [
-    "C026"
+   "Dr. Muhammad Yousaf Rafique": [
+    "P001",
+    "P052",
+    "P159"
    ],
-   "Amat ur Rehman": [
-    "C023",
-    "C028"
-   ],
-   "Dr. Ahsan Ghazali": [
-    "C009",
-    "C014"
-   ],
-   "Dr. Amna Ashraf": [
-    "P022",
-    "P059",
-    "P186",
-    "P257"
-   ],
-   "Dr. Ayesha Mahmood": [
-    "P049",
-    "P093",
-    "P221",
-    "P241"
-   ],
-   "Dr. Azhar Hussain": [
-    "P130",
-    "P167",
-    "P179",
-    "P228",
-    "P237"
-   ],
-   "Dr. Faiz Ul Hassan Shah": [
-    "C004"
-   ],
-   "Dr. Ghulam Abbas": [
-    "P262"
-   ],
-   "Dr. Ghulam Gillani": [
-    "P112",
-    "P126",
-    "P144",
-    "P187",
-    "P203",
-    "P244",
-    "P253"
-   ],
-   "Dr. H. Naeem-ur-Rehman": [
-    "P168",
-    "P195"
-   ],
-   "Dr. Hafsa Sania": [
-    "P024",
-    "P076",
-    "P086"
-   ],
-   "Dr. Hannan Khan Tareen": [
-    "P084",
-    "P095"
-   ],
-   "Dr. Imran Ali": [
-    "C013",
-    "C015"
-   ],
-   "Dr. Khizar Hayat": [
-    "C016"
-   ],
-   "Dr. Madni Asghar": [
-    "C012"
-   ],
-   "Dr. Malik Muhammad Saad Missen": [
-    "P212"
-   ],
-   "Dr. Mamoona Aslam": [
-    "P181"
-   ],
-   "Dr. Maria Atiq": [
-    "P043",
-    "P207"
-   ],
-   "Dr. Mazhar Hussan": [
-    "C018"
-   ],
-   "Dr. Mobeen Shahroz": [
-    "P011",
-    "P033",
-    "P066",
-    "P117",
-    "P129",
-    "P155",
-    "P199"
-   ],
-   "Dr. Muhammad Amin": [
-    "C027"
-   ],
-   "Dr. Muhammad Amir Khan": [
-    "P068",
-    "P113",
-    "P231",
-    "P269"
-   ],
-   "Dr. Muhammad Amir Rafiq": [
-    "P044"
-   ],
-   "Dr. Muhammad Aqeel Ahmad Khan": [
-    "P041",
-    "P139"
-   ],
-   "Dr. Muhammad Rashid": [
-    "C010",
-    "C011"
-   ],
-   "Dr. Muhammad Shafiq": [
-    "P014",
-    "P153",
-    "P240",
-    "P274"
-   ],
-   "Dr. Muhammad Shahbaz": [
-    "P035",
-    "P085",
-    "P108",
-    "P162"
+   "Mr. Zubair Ahmad": [
+    "P002",
+    "P158",
+    "P246",
+    "P255"
    ],
    "Dr. Muhammad Shahzad Shabbir": [
     "P003",
@@ -18203,198 +20311,11 @@
     "P107",
     "P163"
    ],
-   "Dr. Muhammad Shoaib": [
-    "P154"
-   ],
-   "Dr. Muhammad Yousaf Rafique": [
-    "P001",
-    "P052",
-    "P159"
-   ],
-   "Dr. Mumtaz Ahmad": [
-    "C019"
-   ],
-   "Dr. Nushaba Haq": [
-    "C017"
-   ],
-   "Dr. Qaiser Shakeel": [
-    "P090",
-    "P223"
-   ],
-   "Dr. Saba Saeed": [
-    "P056"
-   ],
-   "Dr. Sana Rasheed": [
-    "C003"
-   ],
-   "Dr. Shafqat Ali": [
-    "P013",
-    "P021",
-    "P064",
-    "P074",
-    "P234",
-    "P248",
-    "P256"
-   ],
-   "Dr. Shahid Rizwan": [
-    "P202"
-   ],
-   "Dr. Sibtain Raza": [
-    "P038"
-   ],
-   "Dr. Tehmina Naz Bukhari": [
-    "C021"
-   ],
-   "Dr. Waqas Mahmood": [
-    "P018",
-    "P027",
-    "P063",
-    "P075"
-   ],
-   "Dr. Wareesa Sharif": [
-    "P028",
-    "P114",
-    "P128",
-    "P173",
-    "P193"
-   ],
-   "Dr. Zahid Ahsan": [
-    "P120"
-   ],
-   "Dr. Zunaira Riaz": [
-    "C001",
-    "C002"
-   ],
-   "Mr. Abid Farooq": [
-    "P046",
-    "P222",
-    "P293"
-   ],
-   "Mr. Ahmad Hassan": [
-    "P045",
-    "P135",
-    "P242",
-    "P281"
-   ],
-   "Mr. Aqil Nawaz": [
-    "P048",
-    "P101",
-    "P219",
-    "P264"
-   ],
-   "Mr. Asif Usman": [
-    "C007",
-    "C008"
-   ],
-   "Mr. Asved Gillani": [
-    "P089",
-    "P151",
-    "P283"
-   ],
-   "Mr. Atta Ur Rehman": [
-    "C022"
-   ],
-   "Mr. Daood Ahmed": [
-    "P109",
-    "P205",
-    "P272",
-    "P279"
-   ],
-   "Mr. Hafiz Muhammad Hammad Javed": [
-    "C005",
-    "C006"
-   ],
-   "Mr. Hafiz Raja Muhammad Ali": [
-    "P073",
-    "P175"
-   ],
-   "Mr. Haseeb Ali": [
-    "P019",
-    "P031",
-    "P070",
-    "P119",
-    "P148",
-    "P215"
-   ],
-   "Mr. Jahanzaib Munir": [
-    "P037",
-    "P229"
-   ],
-   "Mr. Muaz Ahmad Rammy": [
-    "C020"
-   ],
-   "Mr. Muhammad Affaq": [
-    "P081",
-    "P121",
-    "P245",
-    "P259"
-   ],
-   "Mr. Muhammad Aqib Hussain": [
-    "P061",
-    "P165"
-   ],
-   "Mr. Muhammad Asif": [
-    "P214",
-    "P226"
-   ],
-   "Mr. Muhammad Hamza": [
-    "P017",
-    "P142",
-    "P239",
-    "P292"
-   ],
-   "Mr. Muhammad Inzmam Shabbir": [
-    "P036",
-    "P150"
-   ],
-   "Mr. Muhammad Khizar Farooq": [
-    "P067",
-    "P152",
-    "P230",
-    "P282"
-   ],
-   "Mr. Muhammad Mohsin Abbas": [
-    "P042",
-    "P099",
-    "P225"
-   ],
-   "Mr. Muhammad Nauman": [
-    "P023",
-    "P057",
-    "P190"
-   ],
-   "Mr. Muhammad Raza Majid": [
-    "P096",
-    "P136",
-    "P149"
-   ],
-   "Mr. Muhammad Sajjad Ghaffar": [
-    "P051",
-    "P104",
-    "P209",
-    "P249"
-   ],
-   "Mr. Muhammad Umar Naeem": [
-    "P058",
-    "P233",
-    "P271"
-   ],
-   "Mr. Muhammad Yasir": [
-    "P009",
-    "P062",
-    "P077",
-    "P134"
-   ],
-   "Mr. Muzammil Ur Rehman": [
-    "P020",
-    "P034",
-    "P065",
-    "P115",
-    "P127",
-    "P143",
-    "P171",
-    "P194",
-    "P210"
+   "Mr. Sufyan Majeed": [
+    "P004",
+    "P016",
+    "P166",
+    "P183"
    ],
    "Mr. Naeem Iqbal": [
     "P005",
@@ -18402,99 +20323,11 @@
     "P224",
     "P265"
    ],
-   "Mr. Noman Raja": [
-    "P025",
-    "P055",
-    "P178",
-    "P294"
-   ],
-   "Mr. Rao Zulqurnain Ali": [
-    "P141",
-    "P276"
-   ],
-   "Mr. Rizwan Arshad": [
-    "P100",
-    "P157",
-    "P236",
-    "P287"
-   ],
-   "Mr. Saeed Ahmad": [
-    "P137",
-    "P182"
-   ],
-   "Mr. Sanaullah Sajjid": [
-    "P047",
-    "P156",
-    "P252",
-    "P266"
-   ],
-   "Mr. Shahzad Hanif": [
-    "P071",
-    "P122",
-    "P227"
-   ],
-   "Mr. Shahzad Rahim": [
-    "P180",
-    "P191",
-    "P238",
-    "P250"
-   ],
-   "Mr. Sufyan Majeed": [
-    "P004",
-    "P016",
-    "P166",
-    "P183"
-   ],
-   "Mr. Suleman Ubaid": [
-    "P273"
-   ],
-   "Mr. Syed Adnan Shah Bukhari": [
-    "P015",
-    "P029",
-    "P069",
-    "P118",
-    "P132",
-    "P184",
-    "P198",
-    "P213"
-   ],
-   "Mr. Syed Muhammad Umair Ud Din": [
-    "P012",
-    "P026",
-    "P053",
-    "P235"
-   ],
-   "Mr. Umer Farooq": [
-    "P103",
-    "P218",
-    "P261",
-    "P263"
-   ],
-   "Mr. Zohaib Anwar": [
-    "P039",
-    "P060",
-    "P164",
-    "P258"
-   ],
-   "Mr. Zubair Ahmad": [
-    "P002",
-    "P158",
-    "P246",
-    "P255"
-   ],
-   "Ms. Abida Nawaz": [
-    "P200",
-    "P243",
-    "P270"
-   ],
-   "Ms. Anum Sahar": [
-    "P217"
-   ],
-   "Ms. Aqsa Ashfaq": [
-    "P131",
-    "P146",
-    "P160",
-    "P176"
+   "Ms. Rimsha Asad": [
+    "P006",
+    "P080",
+    "P140",
+    "P170"
    ],
    "Ms. Aqsa Khursheed": [
     "P007",
@@ -18508,68 +20341,143 @@
     "P232",
     "P290"
    ],
-   "Ms. Eisha Fayyaz": [
-    "P087",
-    "P268"
-   ],
-   "Ms. Farhat Jalil": [
-    "P078",
-    "P197"
-   ],
-   "Ms. Fizza Aslam": [
-    "P116",
-    "P133",
-    "P188"
-   ],
-   "Ms. Hira Ramzan": [
-    "P054",
-    "P286"
-   ],
-   "Ms. Huma Ikhlaq": [
-    "P177",
-    "P247",
-    "P254"
-   ],
-   "Ms. Hunaina Arshad Chohan": [
-    "P072",
-    "P106",
-    "P216",
-    "P267"
+   "Mr. Muhammad Yasir": [
+    "P009",
+    "P062",
+    "P077",
+    "P134"
    ],
    "Ms. Komal Azim": [
     "P010",
     "P082",
     "P206"
    ],
-   "Ms. Marrium Aslam": [
-    "P111",
-    "P125",
-    "P189",
-    "P201"
+   "Dr. Mobeen Shahroz": [
+    "P011",
+    "P033",
+    "P066",
+    "P117",
+    "P129",
+    "P155",
+    "P199"
    ],
-   "Ms. Maryam Murtaza": [
-    "P105"
+   "Mr. Syed Muhammad Umair Ud Din": [
+    "P012",
+    "P026",
+    "P053",
+    "P235"
    ],
-   "Ms. Maryam Rasheed": [
-    "P277",
-    "P284",
-    "P289"
+   "Dr. Shafqat Ali": [
+    "P013",
+    "P021",
+    "P064",
+    "P074",
+    "P234",
+    "P248",
+    "P256"
+   ],
+   "Dr. Muhammad Shafiq": [
+    "P014",
+    "P153",
+    "P240",
+    "P274"
+   ],
+   "Mr. Syed Adnan Shah Bukhari": [
+    "P015",
+    "P029",
+    "P069",
+    "P118",
+    "P132",
+    "P184",
+    "P198",
+    "P213"
+   ],
+   "Mr. Muhammad Hamza": [
+    "P017",
+    "P142",
+    "P239",
+    "P292"
+   ],
+   "Dr. Waqas Mahmood": [
+    "P018",
+    "P027",
+    "P063",
+    "P075"
+   ],
+   "Mr. Haseeb Ali": [
+    "P019",
+    "P031",
+    "P070",
+    "P119",
+    "P148",
+    "P215"
+   ],
+   "Mr. Muzammil Ur Rehman": [
+    "P020",
+    "P034",
+    "P065",
+    "P115",
+    "P127",
+    "P143",
+    "P171",
+    "P194",
+    "P210"
+   ],
+   "Dr. Amna Ashraf": [
+    "P022",
+    "P059",
+    "P186",
+    "P257"
+   ],
+   "Mr. Muhammad Nauman": [
+    "P023",
+    "P057",
+    "P190"
+   ],
+   "Dr. Hafsa Sania": [
+    "P024",
+    "P076",
+    "P086"
+   ],
+   "Mr. Noman Raja": [
+    "P025",
+    "P055",
+    "P178",
+    "P294"
+   ],
+   "Dr. Wareesa Sharif": [
+    "P028",
+    "P114",
+    "P128",
+    "P173",
+    "P193"
    ],
    "Ms. Muniba Mazhar": [
     "P030",
     "P083"
    ],
-   "Ms. Nosheen Khaliq": [
-    "P174",
-    "P251",
-    "P260",
-    "P280"
+   "Dr. Muhammad Shahbaz": [
+    "P035",
+    "P085",
+    "P108",
+    "P162"
    ],
-   "Ms. Rabia Ejaz": [
-    "P079",
-    "P091",
-    "P124",
-    "P138"
+   "Mr. Muhammad Inzmam Shabbir": [
+    "P036",
+    "P150"
+   ],
+   "Mr. Jahanzaib Munir": [
+    "P037",
+    "P229"
+   ],
+   "Dr. Sibtain Raza": [
+    "P038"
+   ],
+   "Mr. Zohaib Anwar": [
+    "P039",
+    "P060",
+    "P164",
+    "P258"
    ],
    "Ms. Rameen Fatima": [
     "P040",
@@ -18577,11 +20485,50 @@
     "P211",
     "P220"
    ],
-   "Ms. Rimsha Asad": [
-    "P006",
-    "P080",
-    "P140",
-    "P170"
+   "Dr. Muhammad Aqeel Ahmad Khan": [
+    "P041",
+    "P139"
+   ],
+   "Mr. Muhammad Mohsin Abbas": [
+    "P042",
+    "P099",
+    "P225"
+   ],
+   "Dr. Maria Atiq": [
+    "P043",
+    "P207"
+   ],
+   "Dr. Muhammad Amir Rafiq": [
+    "P044"
+   ],
+   "Mr. Ahmad Hassan": [
+    "P045",
+    "P135",
+    "P242",
+    "P281"
+   ],
+   "Mr. Abid Farooq": [
+    "P046",
+    "P222",
+    "P293"
+   ],
+   "Mr. Sanaullah Sajjid": [
+    "P047",
+    "P156",
+    "P252",
+    "P266"
+   ],
+   "Mr. Aqil Nawaz": [
+    "P048",
+    "P101",
+    "P219",
+    "P264"
+   ],
+   "Dr. Ayesha Mahmood": [
+    "P049",
+    "P093",
+    "P221",
+    "P241"
    ],
    "Ms. Saba Tahir": [
     "P050",
@@ -18590,72 +20537,304 @@
     "P185",
     "P196"
    ],
-   "Ms. Shehzadi Younis": [
-    "P110",
-    "P123",
-    "P172",
-    "P204"
+   "Mr. Muhammad Sajjad Ghaffar": [
+    "P051",
+    "P104",
+    "P209",
+    "P249"
    ],
-   "Ms. Shumaila Yasin": [
-    "P288"
+   "Ms. Hira Ramzan": [
+    "P054",
+    "P286"
    ],
-   "Ms. Sonia Jamil": [
-    "P278",
-    "P285",
-    "P291"
+   "Dr. Saba Saeed": [
+    "P056"
    ],
-   "Muhammad Nadeem": [
-    "C024",
-    "C025"
+   "Mr. Muhammad Umar Naeem": [
+    "P058",
+    "P233",
+    "P271"
+   ],
+   "Mr. Muhammad Aqib Hussain": [
+    "P061",
+    "P165"
+   ],
+   "Mr. Muhammad Khizar Farooq": [
+    "P067",
+    "P152",
+    "P230",
+    "P282"
+   ],
+   "Dr. Muhammad Amir Khan": [
+    "P068",
+    "P113",
+    "P231",
+    "P269"
+   ],
+   "Mr. Shahzad Hanif": [
+    "P071",
+    "P122",
+    "P227"
+   ],
+   "Ms. Hunaina Arshad Chohan": [
+    "P072",
+    "P106",
+    "P216",
+    "P267"
+   ],
+   "Mr. Hafiz Raja Muhammad Ali": [
+    "P073",
+    "P175"
+   ],
+   "Ms. Farhat Jalil": [
+    "P078",
+    "P197"
+   ],
+   "Ms. Rabia Ejaz": [
+    "P079",
+    "P091",
+    "P124",
+    "P138"
+   ],
+   "Mr. Muhammad Affaq": [
+    "P081",
+    "P121",
+    "P245",
+    "P259"
+   ],
+   "Dr. Hannan Khan Tareen": [
+    "P084",
+    "P095"
+   ],
+   "Ms. Eisha Fayyaz": [
+    "P087",
+    "P268"
+   ],
+   "Mr. Asved Gillani": [
+    "P089",
+    "P151",
+    "P283"
+   ],
+   "Dr. Qaiser Shakeel": [
+    "P090",
+    "P223"
    ],
    "Prof. Dr. Najia Saher": [
     "P092",
     "P145",
     "P192",
     "P208"
+   ],
+   "Mr. Muhammad Raza Majid": [
+    "P096",
+    "P136",
+    "P149"
+   ],
+   "Mr. Rizwan Arshad": [
+    "P100",
+    "P157",
+    "P236",
+    "P287"
+   ],
+   "Mr. Umer Farooq": [
+    "P103",
+    "P218",
+    "P261",
+    "P263"
+   ],
+   "Ms. Maryam Murtaza": [
+    "P105"
+   ],
+   "Mr. Daood Ahmed": [
+    "P109",
+    "P205",
+    "P272",
+    "P279"
+   ],
+   "Ms. Shehzadi Younis": [
+    "P110",
+    "P123",
+    "P172",
+    "P204"
+   ],
+   "Ms. Marrium Aslam": [
+    "P111",
+    "P125",
+    "P189",
+    "P201"
+   ],
+   "Dr. Ghulam Gillani": [
+    "P112",
+    "P126",
+    "P144",
+    "P187",
+    "P203",
+    "P244",
+    "P253"
+   ],
+   "Ms. Fizza Aslam": [
+    "P116",
+    "P133",
+    "P188"
+   ],
+   "Dr. Zahid Ahsan": [
+    "P120"
+   ],
+   "Dr. Azhar Hussain": [
+    "P130",
+    "P167",
+    "P179",
+    "P228",
+    "P237"
+   ],
+   "Ms. Aqsa Ashfaq": [
+    "P131",
+    "P146",
+    "P160",
+    "P176"
+   ],
+   "Mr. Saeed Ahmad": [
+    "P137",
+    "P182"
+   ],
+   "Mr. Rao Zulqurnain Ali": [
+    "P141",
+    "P276"
+   ],
+   "Dr. Muhammad Shoaib": [
+    "P154"
+   ],
+   "Dr. H. Naeem-ur-Rehman": [
+    "P168",
+    "P195"
+   ],
+   "Ms. Nosheen Khaliq": [
+    "P174",
+    "P251",
+    "P260",
+    "P280"
+   ],
+   "Ms. Huma Ikhlaq": [
+    "P177",
+    "P247",
+    "P254"
+   ],
+   "Mr. Shahzad Rahim": [
+    "P180",
+    "P191",
+    "P238",
+    "P250"
+   ],
+   "Dr. Mamoona Aslam": [
+    "P181"
+   ],
+   "Ms. Abida Nawaz": [
+    "P200",
+    "P243",
+    "P270"
+   ],
+   "Dr. Shahid Rizwan": [
+    "P202"
+   ],
+   "Dr. Malik Muhammad Saad Missen": [
+    "P212"
+   ],
+   "Mr. Muhammad Asif": [
+    "P214",
+    "P226"
+   ],
+   "Ms. Anum Sahar": [
+    "P217"
+   ],
+   "Dr. Ghulam Abbas": [
+    "P262"
+   ],
+   "Mr. Suleman Ubaid": [
+    "P273"
+   ],
+   "Ms. Maryam Rasheed": [
+    "P277",
+    "P284",
+    "P289"
+   ],
+   "Ms. Sonia Jamil": [
+    "P278",
+    "P285",
+    "P291"
+   ],
+   "Ms. Shumaila Yasin": [
+    "P288"
+   ],
+   "Dr. Zunaira Riaz": [
+    "C001",
+    "C002"
+   ],
+   "Dr. Sana Rasheed": [
+    "C003"
+   ],
+   "Dr. Faiz Ul Hassan Shah": [
+    "C004"
+   ],
+   "Mr. Hafiz Muhammad Hammad Javed": [
+    "C005",
+    "C006"
+   ],
+   "Mr. Asif Usman": [
+    "C007",
+    "C008"
+   ],
+   "Dr. Ahsan Ghazali": [
+    "C009",
+    "C014"
+   ],
+   "Dr. Muhammad Rashid": [
+    "C010",
+    "C011"
+   ],
+   "Dr. Madni Asghar": [
+    "C012"
+   ],
+   "Dr. Imran Ali": [
+    "C013",
+    "C015"
+   ],
+   "Dr. Khizar Hayat": [
+    "C016"
+   ],
+   "Dr. Nushaba Haq": [
+    "C017"
+   ],
+   "Dr. Mazhar Hussan": [
+    "C018"
+   ],
+   "Dr. Mumtaz Ahmad": [
+    "C019"
+   ],
+   "Mr. Muaz Ahmad Rammy": [
+    "C020"
+   ],
+   "Dr. Tehmina Naz Bukhari": [
+    "C021"
+   ],
+   "Mr. Atta Ur Rehman": [
+    "C022"
+   ],
+   "Amat ur Rehman": [
+    "C023",
+    "C028"
+   ],
+   "Muhammad Nadeem": [
+    "C024",
+    "C025"
+   ],
+   "Ali Raza": [
+    "C026"
+   ],
+   "Dr. Muhammad Amin": [
+    "C027"
    ]
   },
   "by_room": {
-   "2.06": [
-    "P157",
-    "P171",
-    "P192",
-    "P208",
-    "P229",
-    "P242",
-    "P253",
-    "P265",
-    "P272",
-    "P279",
-    "P281",
-    "P288"
-   ],
-   "2.22": [
-    "P009",
-    "P021",
-    "P032",
-    "P051",
-    "P063",
-    "P074",
-    "P083",
-    "P097",
-    "P111",
-    "P124",
-    "P138",
-    "P151",
-    "P158",
-    "P172",
-    "P186",
-    "P201",
-    "P222",
-    "P239",
-    "P254",
-    "P266",
-    "P273",
-    "P280",
-    "P287",
-    "P289"
-   ],
    "2.23": [
     "P001",
     "P011",
@@ -18682,57 +20861,6 @@
     "P274",
     "P282",
     "P290"
-   ],
-   "2.24": [
-    "P020",
-    "P033",
-    "P044",
-    "P053",
-    "P065",
-    "P077",
-    "P090",
-    "P100",
-    "P103",
-    "P113",
-    "P126",
-    "P142",
-    "P160",
-    "P174",
-    "P187",
-    "P202",
-    "P214",
-    "P223",
-    "P235",
-    "P247",
-    "P268",
-    "P275",
-    "P283",
-    "P291"
-   ],
-   "2.25": [
-    "P010",
-    "P022",
-    "P036",
-    "P045",
-    "P062",
-    "P076",
-    "P085",
-    "P095",
-    "P104",
-    "P114",
-    "P127",
-    "P143",
-    "P161",
-    "P175",
-    "P194",
-    "P210",
-    "P230",
-    "P243",
-    "P256",
-    "P269",
-    "P276",
-    "P284",
-    "P292"
    ],
    "2.26": [
     "P002",
@@ -18788,26 +20916,6 @@
     "P286",
     "P294"
    ],
-   "2.46": [
-    "P092"
-   ],
-   "2.50": [
-    "P128"
-   ],
-   "2.51": [
-    "P144"
-   ],
-   "AIRA LAB (2.01)": [
-    "P145"
-   ],
-   "CAPSID LAB": [
-    "P164",
-    "P182",
-    "P205",
-    "P216",
-    "P249",
-    "P258"
-   ],
    "CHEM-1.04": [
     "P004",
     "P015",
@@ -18825,20 +20933,6 @@
     "P198",
     "P225",
     "P240"
-   ],
-   "CHEM-1.06": [
-    "P016",
-    "P040",
-    "P048",
-    "P080",
-    "P110",
-    "P123",
-    "P137",
-    "P153",
-    "P166",
-    "P184",
-    "P199",
-    "P213"
    ],
    "MATHS-1.55": [
     "P005",
@@ -18929,6 +21023,97 @@
     "P237",
     "P251"
    ],
+   "2.22": [
+    "P009",
+    "P021",
+    "P032",
+    "P051",
+    "P063",
+    "P074",
+    "P083",
+    "P097",
+    "P111",
+    "P124",
+    "P138",
+    "P151",
+    "P158",
+    "P172",
+    "P186",
+    "P201",
+    "P222",
+    "P239",
+    "P254",
+    "P266",
+    "P273",
+    "P280",
+    "P287",
+    "P289"
+   ],
+   "2.25": [
+    "P010",
+    "P022",
+    "P036",
+    "P045",
+    "P062",
+    "P076",
+    "P085",
+    "P095",
+    "P104",
+    "P114",
+    "P127",
+    "P143",
+    "P161",
+    "P175",
+    "P194",
+    "P210",
+    "P230",
+    "P243",
+    "P256",
+    "P269",
+    "P276",
+    "P284",
+    "P292"
+   ],
+   "CHEM-1.06": [
+    "P016",
+    "P040",
+    "P048",
+    "P080",
+    "P110",
+    "P123",
+    "P137",
+    "P153",
+    "P166",
+    "P184",
+    "P199",
+    "P213"
+   ],
+   "2.24": [
+    "P020",
+    "P033",
+    "P044",
+    "P053",
+    "P065",
+    "P077",
+    "P090",
+    "P100",
+    "P103",
+    "P113",
+    "P126",
+    "P142",
+    "P160",
+    "P174",
+    "P187",
+    "P202",
+    "P214",
+    "P223",
+    "P235",
+    "P247",
+    "P268",
+    "P275",
+    "P283",
+    "P291"
+   ],
    "MATHS-1.62": [
     "P025",
     "P039",
@@ -18947,6 +21132,40 @@
     "P252",
     "P261",
     "P264"
+   ],
+   "2.46": [
+    "P092"
+   ],
+   "2.50": [
+    "P128"
+   ],
+   "2.51": [
+    "P144"
+   ],
+   "AIRA LAB (2.01)": [
+    "P145"
+   ],
+   "2.06": [
+    "P157",
+    "P171",
+    "P192",
+    "P208",
+    "P229",
+    "P242",
+    "P253",
+    "P265",
+    "P272",
+    "P279",
+    "P281",
+    "P288"
+   ],
+   "CAPSID LAB": [
+    "P164",
+    "P182",
+    "P205",
+    "P216",
+    "P249",
+    "P258"
    ]
   }
  }
